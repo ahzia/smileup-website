@@ -1,0 +1,336 @@
+Project Journal
+
+2025/26 version
+SmileUp - bV Lean Canvas 
+
+Your Lean Canvas Workbook
+This workbook is here to support you as you develop your project idea during your first year in the fellowship. You’ll work on sections of the Lean Canvas each month, learning, testing, revising  and improving as you go.
+Here’s how it works:
+1. Each month, you’ll focus on parts of the Lean Canvas. After completing the content on the bVLC, you’ll receive a clear action to take, your “Lean Canvas Action”. Use the slides in this workbook to explore: write down ideas, notes, research, and anything else that helps you think things through and apply what you’ve learned. You can add more section slides if needed.
+2. Once you’ve gathered enough information and ideas, take some time to reflect and write a clear summary of that section. This concise version is what you’ll add to the Lean Canvas at the end of the month and share with your Venture Coaching Group during your group call.
+3. This workbook is also a space where your Venture Coach (and other fellows) can leave comments and feedback. It’s a simple, organized way to show your progress and stay connected with your support system throughout the fellowship.
+4. In the following months, you’ll move on to a new copy of the canvas, where you’ll add that month’s section. You should  also review and update previous sections. If your thinking has evolved or you’ve gained new insights, update the earlier sections directly (keep the previous versions as they were). If nothing has changed, simply copy and paste the sections from before. This helps you track your journey and make sure everything still aligns.Use this workbook as a space to explore, reflect, and grow.
+Take your time, trust the process, and keep building. :) 								
+Your bV team 
+
+Project Journal
+July / August 
+
+Focus on the purple section(s) this month
+I have always struggled with procrastination. I’m passionate about many ideas and plans, but often found it difficult to stay committed until the end. I realized that breaking goals into smaller, achievable missions — and making them rewarding — increases the chances of actually completing them.
+At the same time, I’ve seen how Gen Z, including my own brother, spend hours on mobile games and social media. While these platforms are highly engaging, they rarely connect young people to urgent global issues like climate change or social impact. This gap bothers me, because I know that if the same energy and attention could be directed toward real-world impact, the results could be transformative.
+
+I have always struggled with procrastination. I’m passionate about many ideas and plans, but often found it difficult to stay committed until the end. I realized that breaking goals into smaller, achievable missions — and making them rewarding — increases the chances of actually completing them.
+At the same time, I’ve seen how Gen Z, including my own brother, spend hours on mobile games and social media. While these platforms are highly engaging, they rarely connect young people to urgent global issues like climate change or social impact. This gap bothers me, because I know that if the same energy and attention could be directed toward real-world impact, the results could be transformative.
+I want to contribute meaningfully: to shift Gen Z from knowing about issues to doing something about them; to support communities and NGOs to reach new supporters; to leave behind a legacy where environmental education isn’t passive, but interactive, inclusive, and empowering.
+
+Your why
+List your personal motivation. Revisit as founder problem fit
+
+Climate change is one of the most pressing challenges of our time, yet younger generations often struggle to translate awareness into meaningful action. Studies show that 59% of Gen Z feel anxious about climate change (Amnesty International, 2022), but less than 25% actively participate in environmental initiatives (Pew Research, 2023). 
+Despite being the most digitally connected generation, many young people lack accessible, engaging pathways to turn concern into sustainable behaviors. Current educational approaches often emphasize information but fail to inspire consistent action. 
+Traditional awareness campaigns, workshops, and lectures rarely compete with the engaging design of games and social media platforms, where Gen Z spends an average of 4+ hours per day (Statista, 2024). As a result, even motivated youth procrastinate or disengage, perceiving climate action as overwhelming, boring, or something “one person can’t change.”
+ On the other hand, NGOs and community groups working on social impact projects struggle to mobilize volunteers and maintain long-term engagement. Many initiatives lack the tools to reach younger audiences where they are most active - on their phones. 
+This creates a gap between organizations needing support and young people wanting to contribute but not finding rewarding entry points. At its core, the problem is not the lack of awareness but the gap between knowledge and behavior change. Without innovative, gamified approaches to make climate action social, rewarding, and accessible, Gen Z risks remaining passive spectators rather than empowered changemakers.
+
+Problem
+List your audience’s top 3 problems or aspects of problems
+
+Existing solutions & alternatives
+List how others are solving these problems already 
+
+App / Platform
+What They Do Well
+Where They Fall Short / Gaps (vs SmileUp)
+letsact (Germany)
+Very easy volunteering registration; many NGOs and volunteers use it. Good UX for finding local volunteer tasks. ~150,000 app downloads, 2,500 nonprofits. letsact.de+1
+Not much gamification; less focus on environmental missions or short-form content; little reward beyond doing good. Not strongly behavior change & education oriented.
+Komorabi
+Bitesized volunteering for “busy people” (10 minute tasks etc.), helps integrate good acts into daily life. komorabi.com
+Does not use mission-based video content; less engagement via rewards; limited social sharing and less robust feedback on impact; not driven by digital tokens or gamified “impact currency”.
+HelpUp (Spain)
+Youth-focused, rewards system for volunteering; connects young people with NGOs; simple interface. helpup.info
+Rewards are modest; mostly intrinsic; less multimedia / video storytelling; not many micro-donation components; fewer social metrics like leaderboards.
+Brightest
+Good for filtering by issue, tracking volunteer hours, large collection of social good opportunities; helps NGOs & individuals connect. Brightest
+Doesn’t deeply gamify behavior; lacks short video content style; not built as much for education + behavior change; less emphasis on community building via shared missions.
+VolunteerYouth
+Connects students with organizations; has reach across countries; many opportunities listed for youth. VolunteerYouth
+Less reward structure; less engagement via missions or video; not strongly behavior change / climate-focused; feels more “listing” of tasks rather than interactive journey.
+ShareTheMeal (WFP)
+Very powerful example: micro-donations focused on hunger; very good transparency; strong brand; simple actions (donate) with clear impact metrics. Wikipedia
+Less focus on volunteer or mission-based learning; no video feed or social gamification; no earning of tokens via environmental action; donation is monetary only, less behavior-driven change.
+
+
+Project Journal
+September 
+
+Focus on the purple section(s) this month
+
+Target audience
+List your target customers, users, beneficiaries and create a persona
+User Type
+Characteristics
+Needs / Motivations
+What SmileUp Offers Them
+Gen Z Teens (14–18)
+Heavy social media/video use; love challenges & games; forming identity; care about causes but often feel powerless
+Want fun, safe ways to contribute; want recognition; want community; need low barrier to entry
+Gamified missions designed for youth; tokens & rewards; safe volunteering activities; parental consent process for 14–15; opportunities to learn & feel empowered
+Gen Z Students (18–24)
+Active on social media; love video/games; care about climate but overwhelmed
+Motivated to do good; want bite-sized actions; want recognition; easy access
+Missions, rewards, video content; seeing impact; fun and meaningful engagement
+Young Professionals / Early Career (25–30)
+Busy schedules; limited time; want purposeful activity; maybe some disposable income
+Want to contribute; want flexible options; want impact; want community
+Micro-actions; volunteering missions; visibility; ability to support even with small time/cost
+NGOs / Community Project Owners
+Looking for support; need volunteers/funding; struggle with engaging youth; limited tech resources
+Want awareness, sustained support, volunteers; want better communication; want to show impact
+Partner with SmileUp to publish missions; receive support; access youth audience; tools for tracking impact
+Youth from Underserved / Marginalized Backgrounds
+Less exposure; less access to formal channels; less trust in institutions; motivated but unsure how to start
+Need low barrier to entry; clear, rewarding paths; mentorship or support
+Smiles tokens; entry via small tasks; video pitches instead of formal applications; inclusive design
+
+
+Project Journal
+October 
+
+Focus on the purple section(s) this month
+
+Proposed Solution: A gamified social impact platform where Gen Z can learn about climate action through short-form videos and complete real-world missions created by NGOs or community organizations. Users earn “Smiles” (digital tokens) by volunteering or completing sustainable tasks, and can use them to support projects, join challenges, or unlock rewards.
+Unique Value Proposition: A fun, accessible, mobile-first way for young people to take meaningful environmental action — combining the engagement level of TikTok with the impact of volunteering.
+Key Features:
+Short video project pages (TikTok/Reels style)
+Gamified missions (daily, weekly, and community missions)
+Earnable tokens (Smiles)
+NGO dashboards for publishing missions
+User impact profile
+Leaderboards & community interaction
+Why It’s Better: Unlike traditional volunteer platforms or static awareness campaigns, SmileUp creates continuous engagement, simplifies access to climate action, and makes behavior change rewarding and social.
+
+Solution & value
+Outline possible approaches & benefits for your audience. Copy, paste or remix where you can 
+
+
+Limited knowledge of NGO workflows & needs → may slow down onboarding organizations
+Limited production deployment experience → risk of technical scaling issues
+Need for legal clarity when onboarding minors (14–18)
+Small personal network of NGOs → harder to obtain early mission partners
+Time constraints as a solo founder
+Need to ensure trust and prevent people from “gaming the system”
+Need funding/resources to maintain, host, and test the prototype long-term
+
+Your speed bumps 
+List commitments and skills limits and how to overcome them
+
+
+
+Project Journal
+November 
+
+Focus on the purple section(s) this month
+
+Who would be most excited to try the prototype?
+BeVisioners Fellows & Purpose-Driven Youth Leaders Many fellows are working on their own community projects and want to gamify engagement, but lack the technical skills to build an app. SmileUp provides them with an immediate solution at no development cost.
+Small–Medium NGOs and Community Organizations Especially those who struggle with youth engagement, volunteer retention, or creating consistent participation.
+University Clubs & Student-Led Initiatives They are tech-friendly, open to experimentation, and continually seek ways to motivate their members.
+Gen Z climate/sustainability groups They value community challenges, rewards, social impact and are generally early adopters of gamified technology.
+What motivates them to engage?
+They need better tools to keep their community active.
+They want simple, ready-to-use gamification without building their own app.
+They’re motivated by results: increased participation, better engagement metrics, and positive community behavior.
+They appreciate reward systems because they align with Gen Z’s desire for recognition and visible impact.
+They want something new, fun, and easy that makes their project stand out.
+How could their feedback shape next steps?
+They will reveal which missions and challenges are most useful for real projects.
+They will help identify missing features needed by organizations to run their programs.
+Their usage patterns will show how intuitive the experience is and where the UI needs improvement.
+Their needs will validate whether SmileUp can support multiple community types (environmental groups, education, mental health, inclusion, etc.).
+They help determine the minimum viable set of features organizations actually need to adopt SmileUp.
+
+Early adopters
+List the characteristics of your first customers or users
+
+
+Critical assumptions for success
+Organizations want to gamify participation but don’t have tools for it.
+Communities will actually become more active when missions, points, and rewards are introduced.
+SmileUp’s interface is simple enough for both youth and staff to understand without training.
+One platform can support different types of organizations (NGOs, clubs, initiatives).
+A universal mission system can fit many use cases (environmental action, volunteering, learning goals, community contributions, etc.).
+What needs to be tested first to reduce uncertainty?
+Whether NGOs and youth organizations see enough value to join the platform.
+Whether the mission and points system motivates ongoing action, not just short-term excitement.
+Whether admins find the backend easy enough to manage without tutorials.
+Whether organizations can fund missions through:
+donations,
+brand-sponsored rewards,
+selling items in their shop and whether these features meet real needs.
+Possible hidden assumptions
+Youth will consistently engage with challenges even without big rewards.
+Organizations have enough staff capacity to manage missions weekly.
+Gen Z will find the gamified design fun — not childish or boring.
+Multiple communities can co-exist under one app without confusion.
+A single points system ("Smiles") will work across very different communities.
+
+Prototype
+List the assumptions you need to validate  
+
+
+
+Project Journal
+December 
+
+Focus on the purple section(s) this month
+
+A focused mission system (for 1–2 community types) is more effective than a universal mission system. We assume narrowing to specific community types (e.g., climate NGOs & university clubs) increases clarity, adoption, and usability.
+Organizations prefer structured mission templates rather than fully customizable systems. Instead of giving admins total flexibility, we assume providing predefined mission formats reduces friction and improves onboarding.
+Users engage more consistently when missions are time-bound (weekly/monthly) rather than open-ended.
+Removing complex token systems (crypto-style or multiple currencies) increases trust and reduces confusion.
+Basic reward systems (XP + Smiles) are sufficient to motivate early adopters without financial incentives.
+Admins can realistically manage missions weekly without heavy operational burden.
+
+Prototype V.1-2
+List the assumptions you need to validate  
+
+
+
+Project Journal
+January 
+
+Focus on the purple section(s) this month
+
+Aggregated social content (feed integration) increases engagement without becoming distracting. We assume organizations value embedding existing posts instead of creating new content inside SmileUp.
+Connecting feed posts directly to missions increases mission conversion rates.
+Users prefer action-driven feeds over traditional scrolling feeds.
+Organizations are willing to pay for automation features (auto social sync, analytics, advanced engagement tools).
+Smiles tokens can function across multiple communities without reducing perceived value.
+A multi-community environment does not confuse users when navigation is structured clearly.
+
+Prototype V.2-3
+List the assumptions you need to validate  
+
+
+
+Project Journal
+February 
+
+Focus on the purple section(s) this month
+
+Path to First Users (Demand Side)
+BeVisioners Network
+Fellows adopt SmileUp for their own initiatives.
+Direct warm introductions.
+Pilot programs.
+University Clubs (Climate, Sustainability, Social Impact)
+On-campus demos.
+Student ambassadors.
+Integration into semester programs.
+Gen Z Climate Groups (Local Chapters)
+Targeted outreach via LinkedIn & Instagram.
+Offer free onboarding for first 10 communities.
+Hackathons & Youth Innovation Events
+Live demos.
+Early adopter recruitment.
+ 
+Channels & partnerships
+List your path to customers and key partnerships
+
+Key Partnerships (Supply Side)
+Small–Medium NGOs
+Pilot partners for mission testing.
+Provide real-world use cases.
+Youth Programs & Foundations
+Structured programs using SmileUp to gamify participation.
+Brands Supporting Sustainability
+Potential sponsors for Smiles-based rewards.
+Universities
+Institutional entry point for multiple clubs at once.
+
+
+
+Project Journal
+March 
+
+Focus on the purple section(s) this month
+
+1. Key Metrics
+User Growth & Activation
+Number of registered users and monthly growth rate
+Daily and monthly active users (DAU/MAU)
+Onboarding completion rate
+Engagement & Behavior Change
+Missions completed per user per week
+User retention (7-day / 30-day)
+Average session time
+Conversion rate from feed content to mission participation
+Community & Organization Metrics
+Number of onboarded organizations and active communities
+Number of missions created per organization
+Volunteer participation per mission
+Smiles Token Economy (Core Metrics)
+Total Smiles earned per day/week
+Average Smiles earned per user
+Percentage of users earning Smiles regularly
+Total Smiles spent and redemption rate
+Average Smiles spent per user
+Time to first reward redemption
+Repeat redemption rate
+Ratio of Smiles earned vs spent (circulation health)
+Impact Metrics
+Total missions completed
+Volunteer hours generated
+Real-world impact generated (e.g. environmental or social contributions)
+Conversion of Smiles into measurable impact actions 
+
+
+SaaS Subscriptions (Organizations)
+Monthly subscription for NGOs, communities, and universities
+Includes social media integration, mission tools, analytics, and AI-powered feed insights
+Smiles Token Economy (Core Revenue Driver)
+Sponsored Smiles: Organizations and brands pay to fund Smiles rewards for missions, incentivizing user participation
+Reward Marketplace Commission: Revenue from partner rewards where users redeem Smiles (commission per redemption or listing fees)
+Mission Promotion & Boosting: Organizations pay to increase visibility of missions and campaigns within the feed
+Impact Sponsorships: Brands sponsor conversions of Smiles into real-world impact (e.g. donations, environmental actions)
+Additional Revenue Streams
+Premium AI features (personalized feed summaries, recommendations)
+Data insights (aggregated, anonymized reports for organizations and partners)
+
+Income streams
+
+
+Fixed Costs
+Platform development and maintenance
+Hosting, servers, and database infrastructure
+API integrations (social media platforms)
+Legal and compliance (GDPR, youth protection)
+Variable Costs
+Cloud scaling based on users and content
+AI processing costs (feed summarization and personalization)
+Social media data integration and API usage
+Smiles Economy Costs
+Reward fulfillment and partner payouts (if subsidized)
+Transaction processing
+Fraud prevention and system integrity
+Growth & Operations
+Marketing and user acquisition (student ambassadors, events)
+Community and partner onboarding
+Customer support and operations 
+
+Cost structure
+
+
+
+
+Wrapping It Up
+As you reach the end of this workbook, take a moment to reflect on how far you’ve come. Each section you’ve explored has helped shape a clearer, more thoughtful version of your project, one step at a time.
+Now is a great time to review your full Lean Canvas. Do the pieces still fit together? Does your project clearly show the challenge you’re addressing, who it impacts, and how your solution creates meaningful change?
+This review is also a chance to get ready for your Project Scholarship application. Many of the questions in the application connect directly to what you’ve already worked on here. Your workbook is more than a tool, it’s your archive, your thinking space, and your story in the making.
+Take your time. Reflect honestly. And step into the next phase with confidence.You’ve got this. :)
+
+Your bV team
+
+

@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "last_reviewed": "2026-03-29",
+  "purpose": "Curated emission factors for SmileUp website calculator and future app imports. Each UK factor is traced to a row ID in docs/carbon-footprint-calculator/data.csv (DEFRA Company Reporting 2025).",
+  "disclaimer": "Factors are averages for reporting and education. Organisation-grade inventories require scope rules, market-based electricity, and supplier-specific data where available.",
+  "primary_sources": [
+    {
+      "id": "uk_defra_company_reporting_2025",
+      "name": "UK Government GHG Conversion Factors for Company Reporting",
+      "year": 2025,
+      "url": "https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting",
+      "local_file": "docs/carbon-footprint-calculator/data.csv",
+      "notes": "Numeric values in the CSV use comma as decimal separator. Use rows where Column Text is 'kg CO2e' for total CO2e per unit unless you need gas breakdown."
+    },
+    {
+      "id": "eea_electricity_intensity",
+      "name": "EEA — Greenhouse gas emission intensity of electricity generation (country level)",
+      "url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1/greenhouse-gas-emission-intensity-of-electricity-generation-country-level",
+      "notes": "Download the indicator dataset and import kg CO2e per kWh (or g/kWh) per EU/EEA country. No single row replaces the full DEFRA workbook."
+    },
+    {
+      "id": "eu_jrc_local_energy_factors",
+      "name": "European Commission / JRC — GHG emission factors for local energy use (EU data portal)",
+      "url": "https://data.europa.eu/data/datasets/72fac2b2-aa63-4dc1-ade3-4e56b37e4b7c?locale=en",
+      "notes": "Use for EU-oriented energy factors; check whether values are activity-based or life-cycle as documented in the dataset."
+    }
+  ],
+  "jurisdictions": {
+    "uk": {
+      "label": "United Kingdom (DEFRA 2025, company reporting)",
+      "factors": [
+        {
+          "key": "electricity_grid_scope2_kg_co2e_per_kwh",
+          "value": 0.177,
+          "unit": "kWh",
+          "unit_label": "kilowatt-hour (electricity consumed)",
+          "ghg": "CO2e",
+          "defra_id": "7_400_4000_5_1",
+          "scope": "Scope 2",
+          "description": "UK electricity: location-based average, total kg CO2e per kWh (includes CO2, CH4, N2O in CO2e).",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "electricity_t_and_d_additional_kg_co2e_per_kwh",
+          "value": 0.01853,
+          "unit": "kWh",
+          "ghg": "CO2e",
+          "defra_id": "13_402_4000_5_1",
+          "scope": "Scope 3",
+          "description": "Transmission and distribution (T&D) losses — UK electricity, additional kg CO2e per kWh consumed. Optional add-on for fuller Scope 3.",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "car_medium_petrol_kg_co2e_per_km",
+          "value": 0.17474,
+          "unit": "km",
+          "ghg": "CO2e",
+          "defra_id": "4_301_3054_4_1",
+          "scope": "Scope 1",
+          "description": "Medium car, petrol, per vehicle kilometre (not per passenger). For ride-sharing, divide by average occupancy in your methodology.",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "bus_local_passenger_km_kg_co2e_per_pkm",
+          "value": 0.12525,
+          "unit": "passenger.km",
+          "ghg": "CO2e",
+          "defra_id": "25_314_3143_11_1",
+          "scope": "Scope 3",
+          "description": "Local bus (not London), per passenger-kilometre.",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "rail_national_passenger_km_kg_co2e_per_pkm",
+          "value": 0.03546,
+          "unit": "passenger.km",
+          "ghg": "CO2e",
+          "defra_id": "25_315_3147_11_1",
+          "scope": "Scope 3",
+          "description": "National rail (UK), per passenger-kilometre.",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "flight_domestic_average_passenger_rf_kg_co2e_per_pkm",
+          "value": 0.22928,
+          "unit": "passenger.km",
+          "ghg": "CO2e",
+          "defra_id": "21_316_3160_11_1",
+          "scope": "Scope 3",
+          "description": "Domestic flights to/from UK, average passenger, with radiative forcing (RF) index.",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "flight_short_haul_economy_rf_kg_co2e_per_pkm",
+          "value": 0.12576,
+          "unit": "passenger.km",
+          "ghg": "CO2e",
+          "defra_id": "21_316_3164_11_1",
+          "scope": "Scope 3",
+          "description": "Short-haul to/from UK, economy class, with RF.",
+          "source_id": "uk_defra_company_reporting_2025"
+        },
+        {
+          "key": "flight_long_haul_economy_rf_kg_co2e_per_pkm",
+          "value": 0.11704,
+          "unit": "passenger.km",
+          "ghg": "CO2e",
+          "defra_id": "21_316_3170_11_1",
+          "scope": "Scope 3",
+          "description": "Long-haul to/from UK, economy class, with RF.",
+          "source_id": "uk_defra_company_reporting_2025"
+        }
+      ]
+    },
+    "eu": {
+      "label": "European Union / EEA (import required for electricity per country)",
+      "notes": "Transport factors below are placeholders for product UX until national EU passenger factors are imported. Do not treat them as UK-equivalent accuracy.",
+      "electricity_kg_co2e_per_kwh_by_country": {},
+      "electricity_import_instructions": {
+        "primary_dataset": "eea_electricity_intensity",
+        "action": "Download EEA indicator data; map ISO country code -> kg CO2e per kWh; paste into electricity_kg_co2e_per_kwh_by_country."
+      },
+      "factors": []
+    }
+  },
+  "lifestyle_supplementary": {
+    "description": "Annual diet and consumption buckets are not single rows in the DEFRA CSV; keep separate and cite lifecycle literature reviews / national MFA studies when publishing.",
+    "diet_kg_co2e_per_year": {
+      "vegan": { "value": 1500, "note": "Order-of-magnitude annual food-system CO2e; calibrate with chosen study." },
+      "vegetarian": { "value": 1700, "note": "Order-of-magnitude annual food-system CO2e; calibrate with chosen study." },
+      "average": { "value": 2200, "note": "Order-of-magnitude annual food-system CO2e; calibrate with chosen study." },
+      "meat_heavy": { "value": 3000, "note": "Order-of-magnitude annual food-system CO2e; calibrate with chosen study." }
+    },
+    "consumption_kg_co2e_per_year": {
+      "low": { "value": 400, "note": "Goods/services footprint proxy; replace with spend-based factors for org use." },
+      "medium": { "value": 900, "note": "Goods/services footprint proxy; replace with spend-based factors for org use." },
+      "high": { "value": 1700, "note": "Goods/services footprint proxy; replace with spend-based factors for org use." }
+    },
+    "references": [
+      {
+        "name": "IPCC AR6 WGIII (lifecycle and mitigation context)",
+        "url": "https://www.ipcc.ch/report/ar6/wg3/"
+      }
+    ]
+  }
+}

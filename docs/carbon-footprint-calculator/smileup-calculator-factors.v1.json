@@ -1,0 +1,194 @@
+{
+  "schema_version": "2.0.0",
+  "last_reviewed": "2026-03-29",
+  "calculator_id": "smileup_footprint_v1",
+  "disclaimer": "Educational estimate. Transport uses UK DEFRA 2025 factors as a transparent default for all regions unless you select UK/EU grid data. Food and goods tiers are literature-style assumptions, not national accounts.",
+  "sources_registry": {
+    "eea_electricity_2023": {
+      "id": "eea_electricity_2023",
+      "type": "official",
+      "name": "EEA — Greenhouse gas emission intensity of electricity generation (country level), 2023 column",
+      "url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1/greenhouse-gas-emission-intensity-of-electricity-generation-country-level",
+      "local_export": "docs/carbon-footprint-calculator/draft_data/greenhouse_gas_emission_intensity_of_electricity_generation,_country_level.csv",
+      "unit_note": "Values in the CSV are grams CO2eq per kWh of electricity generated; SmileUp stores kg CO2e per kWh (divide by 1000)."
+    },
+    "uk_defra_2025": {
+      "id": "uk_defra_2025",
+      "type": "official",
+      "name": "UK Government — GHG Conversion Factors for Company Reporting 2025",
+      "url": "https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting",
+      "local_file": "docs/carbon-footprint-calculator/data.csv",
+      "unit_note": "Use row ID and Column Text = kg CO2e for total CO2e per unit."
+    },
+    "assumed_global_grid": {
+      "id": "assumed_global_grid",
+      "type": "assumed",
+      "name": "Illustrative global grid average (not from your EEA extract)",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/",
+      "detail": "Order-of-magnitude default (~0.48 kg CO2e/kWh) used only when no country-specific factor is selected. Replace with IEA Emissions Factors or IPCC-aligned national data for production."
+    },
+    "assumed_india_grid": {
+      "id": "assumed_india_grid",
+      "type": "assumed",
+      "name": "Approximate India grid intensity (illustrative)",
+      "url": "https://www.iea.org/data-and-statistics/data-product/emissions-factors-2025",
+      "detail": "Rounded illustrative value; verify with IEA country factor or national statistics before publishing as official."
+    },
+    "assumed_afghanistan_grid": {
+      "id": "assumed_afghanistan_grid",
+      "type": "assumed",
+      "name": "Afghanistan / fragile grid (high uncertainty)",
+      "detail": "No reliable single public factor in the SmileUp draft set. Mid-range illustrative value for education only."
+    },
+    "assumed_flight_distance": {
+      "id": "assumed_flight_distance",
+      "type": "assumed",
+      "name": "Typical return-trip passenger-kilometres per flight counted",
+      "detail": "Short-haul count × 2 000 passenger-km; long-haul count × 12 000 passenger-km. User should adjust in a future version (distance entry)."
+    },
+    "assumed_diet_annual": {
+      "id": "assumed_diet_annual",
+      "type": "assumed",
+      "name": "Annual diet-related GHG (food system, order of magnitude)",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/",
+      "detail": "Bucket values are not from Eurostat tables; synthesised for UX. Calibrate against one peer-reviewed global food study for v2."
+    },
+    "assumed_consumption_annual": {
+      "id": "assumed_consumption_annual",
+      "type": "assumed",
+      "name": "Annual goods/services footprint proxy",
+      "detail": "Low/medium/high tiers are placeholders until spend-based or IO models (e.g. Eurostat ENV_AC_IO10) are integrated."
+    }
+  },
+  "electricity_kg_co2e_per_kwh": {
+    "uk": {
+      "value": 0.177,
+      "raw_csv_g_per_kwh": null,
+      "year": 2025,
+      "source_id": "uk_defra_2025",
+      "factor_key": "electricity_grid_scope2_kg_co2e_per_kwh",
+      "defra_row_id": "7_400_4000_5_1",
+      "label": "United Kingdom"
+    },
+    "estonia": { "value": 0.69, "raw_csv_g_per_kwh": 690, "year": 2023, "source_id": "eea_electricity_2023", "label": "Estonia" },
+    "poland": { "value": 0.614, "raw_csv_g_per_kwh": 614, "year": 2023, "source_id": "eea_electricity_2023", "label": "Poland" },
+    "cyprus": { "value": 0.585, "raw_csv_g_per_kwh": 585, "year": 2023, "source_id": "eea_electricity_2023", "label": "Cyprus" },
+    "czechia": { "value": 0.44, "raw_csv_g_per_kwh": 440, "year": 2023, "source_id": "eea_electricity_2023", "label": "Czechia" },
+    "malta": { "value": 0.342, "raw_csv_g_per_kwh": 342, "year": 2023, "source_id": "eea_electricity_2023", "label": "Malta" },
+    "germany": { "value": 0.329, "raw_csv_g_per_kwh": 329, "year": 2023, "source_id": "eea_electricity_2023", "label": "Germany" },
+    "bulgaria": { "value": 0.281, "raw_csv_g_per_kwh": 281, "year": 2023, "source_id": "eea_electricity_2023", "label": "Bulgaria" },
+    "netherlands": { "value": 0.263, "raw_csv_g_per_kwh": 263, "year": 2023, "source_id": "eea_electricity_2023", "label": "Netherlands" },
+    "ireland": { "value": 0.26, "raw_csv_g_per_kwh": 260, "year": 2023, "source_id": "eea_electricity_2023", "label": "Ireland" },
+    "greece": { "value": 0.258, "raw_csv_g_per_kwh": 258, "year": 2023, "source_id": "eea_electricity_2023", "label": "Greece" },
+    "romania": { "value": 0.234, "raw_csv_g_per_kwh": 234, "year": 2023, "source_id": "eea_electricity_2023", "label": "Romania" },
+    "italy": { "value": 0.225, "raw_csv_g_per_kwh": 225, "year": 2023, "source_id": "eea_electricity_2023", "label": "Italy" },
+    "eu27": { "value": 0.21, "raw_csv_g_per_kwh": 210, "year": 2023, "source_id": "eea_electricity_2023", "label": "EU-27 average (EEA table)" },
+    "slovenia": { "value": 0.176, "raw_csv_g_per_kwh": 176, "year": 2023, "source_id": "eea_electricity_2023", "label": "Slovenia" },
+    "spain": { "value": 0.158, "raw_csv_g_per_kwh": 158, "year": 2023, "source_id": "eea_electricity_2023", "label": "Spain" },
+    "hungary": { "value": 0.154, "raw_csv_g_per_kwh": 154, "year": 2023, "source_id": "eea_electricity_2023", "label": "Hungary" },
+    "belgium": { "value": 0.145, "raw_csv_g_per_kwh": 145, "year": 2023, "source_id": "eea_electricity_2023", "label": "Belgium" },
+    "croatia": { "value": 0.134, "raw_csv_g_per_kwh": 134, "year": 2023, "source_id": "eea_electricity_2023", "label": "Croatia" },
+    "lithuania": { "value": 0.124, "raw_csv_g_per_kwh": 124, "year": 2023, "source_id": "eea_electricity_2023", "label": "Lithuania" },
+    "portugal": { "value": 0.119, "raw_csv_g_per_kwh": 119, "year": 2023, "source_id": "eea_electricity_2023", "label": "Portugal" },
+    "denmark": { "value": 0.094, "raw_csv_g_per_kwh": 94, "year": 2023, "source_id": "eea_electricity_2023", "label": "Denmark" },
+    "austria": { "value": 0.085, "raw_csv_g_per_kwh": 85, "year": 2023, "source_id": "eea_electricity_2023", "label": "Austria" },
+    "slovakia": { "value": 0.084, "raw_csv_g_per_kwh": 84, "year": 2023, "source_id": "eea_electricity_2023", "label": "Slovakia" },
+    "latvia": { "value": 0.067, "raw_csv_g_per_kwh": 67, "year": 2023, "source_id": "eea_electricity_2023", "label": "Latvia" },
+    "luxembourg": { "value": 0.056, "raw_csv_g_per_kwh": 56, "year": 2023, "source_id": "eea_electricity_2023", "label": "Luxembourg" },
+    "france": { "value": 0.05, "raw_csv_g_per_kwh": 50, "year": 2023, "source_id": "eea_electricity_2023", "label": "France" },
+    "finland": { "value": 0.04, "raw_csv_g_per_kwh": 40, "year": 2023, "source_id": "eea_electricity_2023", "label": "Finland" },
+    "sweden": { "value": 0.008, "raw_csv_g_per_kwh": 8, "year": 2023, "source_id": "eea_electricity_2023", "label": "Sweden" },
+    "global": {
+      "value": 0.48,
+      "year": null,
+      "source_id": "assumed_global_grid",
+      "label": "Global (illustrative average)"
+    },
+    "india": {
+      "value": 0.68,
+      "year": null,
+      "source_id": "assumed_india_grid",
+      "label": "India (illustrative)"
+    },
+    "afghanistan": {
+      "value": 0.55,
+      "year": null,
+      "source_id": "assumed_afghanistan_grid",
+      "label": "Afghanistan (illustrative)"
+    }
+  },
+  "transport": {
+    "car_medium_petrol_kg_co2e_per_vehicle_km": {
+      "value": 0.17474,
+      "unit": "km",
+      "source_id": "uk_defra_2025",
+      "defra_row_id": "4_301_3054_4_1",
+      "description": "Medium car, petrol — per vehicle kilometre (UK factor applied for all regions in v1; disclosed in UI)."
+    },
+    "bus_local_kg_co2e_per_passenger_km": {
+      "value": 0.12525,
+      "unit": "passenger.km",
+      "source_id": "uk_defra_2025",
+      "defra_row_id": "25_314_3143_11_1",
+      "description": "Local bus (UK), per passenger-km."
+    },
+    "rail_national_kg_co2e_per_passenger_km": {
+      "value": 0.03546,
+      "unit": "passenger.km",
+      "source_id": "uk_defra_2025",
+      "defra_row_id": "25_315_3147_11_1",
+      "description": "National rail (UK), per passenger-km."
+    },
+    "flight_short_haul_kg_co2e_per_passenger_km_with_rf": {
+      "value": 0.12576,
+      "unit": "passenger.km",
+      "source_id": "uk_defra_2025",
+      "defra_row_id": "21_316_3164_11_1",
+      "description": "Short-haul economy to/from UK, with radiative forcing."
+    },
+    "flight_long_haul_kg_co2e_per_passenger_km_with_rf": {
+      "value": 0.11704,
+      "unit": "passenger.km",
+      "source_id": "uk_defra_2025",
+      "defra_row_id": "21_316_3170_11_1",
+      "description": "Long-haul economy to/from UK, with radiative forcing."
+    },
+    "assumed_passenger_km_per_short_flight": {
+      "value": 2000,
+      "source_id": "assumed_flight_distance",
+      "description": "Passenger-km per short-haul trip counted (e.g. typical return regional)."
+    },
+    "assumed_passenger_km_per_long_flight": {
+      "value": 12000,
+      "source_id": "assumed_flight_distance",
+      "description": "Passenger-km per long-haul trip counted (e.g. typical intercontinental return)."
+    }
+  },
+  "lifestyle_annual_kg_co2e": {
+    "diet": {
+      "vegan": { "value": 1500, "source_id": "assumed_diet_annual" },
+      "vegetarian": { "value": 1700, "source_id": "assumed_diet_annual" },
+      "average": { "value": 2200, "source_id": "assumed_diet_annual" },
+      "meat_heavy": { "value": 3000, "source_id": "assumed_diet_annual" }
+    },
+    "consumption": {
+      "low": { "value": 400, "source_id": "assumed_consumption_annual" },
+      "medium": { "value": 900, "source_id": "assumed_consumption_annual" },
+      "high": { "value": 1700, "source_id": "assumed_consumption_annual" }
+    }
+  },
+  "ui_country_options": [
+    { "key": "global", "label": "Global (illustrative grid)" },
+    { "key": "eu27", "label": "EU-27 average (EEA 2023)" },
+    { "key": "uk", "label": "United Kingdom" },
+    { "key": "germany", "label": "Germany" },
+    { "key": "france", "label": "France" },
+    { "key": "poland", "label": "Poland" },
+    { "key": "spain", "label": "Spain" },
+    { "key": "italy", "label": "Italy" },
+    { "key": "netherlands", "label": "Netherlands" },
+    { "key": "sweden", "label": "Sweden" },
+    { "key": "india", "label": "India (illustrative)" },
+    { "key": "afghanistan", "label": "Afghanistan (illustrative)" }
+  ]
+}
