@@ -8,7 +8,7 @@ const org = {
   name: "SmileUp",
   url: "https://smileup.world",
   description:
-    "SmileUp helps people turn everyday actions into measurable environmental and social impact through missions, community, and rewards.",
+    "SmileUp turns everyday actions into real climate and social impact through missions, community, and rewards.",
   sameAs: ["https://www.instagram.com/smileupworld"],
 };
 
@@ -18,7 +18,7 @@ const website = {
   name: "SmileUp",
   url: "https://smileup.world",
   description:
-    "Turn everyday actions into measurable environmental and social impact. Join the waitlist for mission-based climate and social tools.",
+    "Missions, community, and rewards for climate and social impact on your phone. Join the waitlist for early access.",
   publisher: { "@type": "Organization", name: "SmileUp" },
 };
 

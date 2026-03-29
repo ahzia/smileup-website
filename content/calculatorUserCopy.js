@@ -3,7 +3,7 @@
  */
 
 export const calculatorUserDisclaimer =
-  "This is an educational estimate—not a personal carbon audit. Home electricity uses the grid mix for the country you pick where we have data; travel uses one published reference for everyone in this version so results stay easy to compare. Diet and shopping use simple yearly bands as a starting point.";
+  "Educational estimate—not a personal carbon audit. Your country mainly changes home electricity; travel uses the same reference for everyone so numbers stay easy to compare. Food and shopping use simple yearly bands.";
 
 export const calculatorResultHint =
-  "When you are done, tap Show my footprint to see your total and a simple breakdown.";
+  "When you’re ready, tap Show my footprint for your total and a short breakdown.";

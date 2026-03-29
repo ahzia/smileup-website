@@ -73,8 +73,6 @@
   --btn-ghost-bg: #ffffff;
   --btn-ghost-hover-border: #aab1b8;
 
-  --logo-filter: none;
-
   --calc-transport: #1b6e5c;
   --calc-home: #2a9d8f;
   --calc-food: #52b788;
@@ -187,8 +185,6 @@
   --btn-primary-fg: #ffffff;
   --btn-ghost-bg: #131a17;
   --btn-ghost-hover-border: #5a6b62;
-
-  --logo-filter: brightness(0) invert(1);
 
   --calc-transport: #5eead4;
   --calc-home: #2dd4bf;

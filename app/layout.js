@@ -28,7 +28,14 @@ export const metadata = {
     template: "%s | SmileUp",
   },
   description:
-    "SmileUp helps people turn everyday actions into measurable environmental and social impact through missions, community, and rewards.",
+    "SmileUp turns everyday actions into real climate and social impact—missions, community, and rewards on your phone.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   keywords: [
     "SmileUp",
     "social impact app",
@@ -42,7 +49,7 @@ export const metadata = {
   openGraph: {
     title: "SmileUp",
     description:
-      "Turn everyday actions into measurable environmental and social impact.",
+      "Real climate and social impact—missions, community, and rewards on your phone.",
     url: "https://smileup.world",
     siteName: "SmileUp",
     locale: "en_US",
@@ -60,7 +67,8 @@ export const metadata = {
     card: "summary_large_image",
     title: "SmileUp",
     description:
-      "Turn everyday actions into measurable environmental and social impact.",
+      "Real climate and social impact—missions, community, and rewards on your phone.",
+    images: ["/hackglobal.webp"],
   },
 };
 

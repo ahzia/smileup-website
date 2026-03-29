@@ -38,7 +38,7 @@ export default function WaitlistForm({ source = "home" }) {
       }
 
       setStatus("success");
-      setMessage("You are on the waitlist. We will keep you posted.");
+      setMessage("You’re on the list—we’ll email you when there’s news.");
       setForm(initial);
     } catch (error) {
       setStatus("error");
@@ -102,11 +102,9 @@ export default function WaitlistForm({ source = "home" }) {
       />
 
       <button className="btn btn-primary" disabled={status === "loading"}>
-        {status === "loading" ? "Joining..." : "Join the Waitlist"}
+        {status === "loading" ? "Joining…" : "Join the waitlist ✨"}
       </button>
-      <p className="muted small">
-        By joining, you agree to receive launch updates from SmileUp.
-      </p>
+      <p className="muted small">We’ll only email you about SmileUp launches and updates.</p>
       {message ? (
         <p className={status === "error" ? "error" : "success"}>{message}</p>
       ) : null}

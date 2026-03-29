@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { calculatorResultHint, calculatorUserDisclaimer } from "../content/calculatorUserCopy";
 import calculatorFactors from "../lib/calculatorFactors";
+import { buildFootprintPdfProps } from "../lib/footprintPdfData";
 import { computeFootprint, getCountryOptions } from "../lib/footprintCompute.js";
 
 const steps = [
@@ -45,7 +46,7 @@ const steps = [
   {
     key: "shortFlightsPerYear",
     label: "Shorter flights per year",
-    subtitle: "Regional or European-style trips you count as one return journey each.",
+    subtitle: "Count each regional or European return trip as one.",
     type: "range",
     min: 0,
     max: 30,
@@ -55,7 +56,7 @@ const steps = [
   {
     key: "longFlightsPerYear",
     label: "Long flights per year",
-    subtitle: "Intercontinental-style trips you count as one return journey each.",
+    subtitle: "Count each long-haul return trip as one.",
     type: "range",
     min: 0,
     max: 12,
@@ -75,7 +76,7 @@ const steps = [
   {
     key: "diet",
     label: "How do you usually eat?",
-    subtitle: "We use a simple yearly band for food-related emissions—not a meal-by-meal diary.",
+    subtitle: "Simple yearly band—not a food diary.",
     type: "select",
   },
   {
@@ -105,6 +106,7 @@ export default function CalculatorPreview({ detailed = false }) {
   const [values, setValues] = useState(initialValues);
   const [stepIndex, setStepIndex] = useState(0);
   const [showBreakdown, setShowBreakdown] = useState(false);
+  const [pdfBusy, setPdfBusy] = useState(false);
 
   const current = steps[stepIndex];
   const isLastStep = stepIndex === steps.length - 1;
@@ -134,16 +136,42 @@ export default function CalculatorPreview({ detailed = false }) {
 
   const sourceById = (id) => data.sources_registry[id];
 
+  const handleDownloadPdf = useCallback(async () => {
+    setPdfBusy(true);
+    try {
+      const [{ pdf }, { default: FootprintReportDocument }] = await Promise.all([
+        import("@react-pdf/renderer"),
+        import("./footprintPdf/FootprintReportDocument"),
+      ]);
+      const pdfProps = buildFootprintPdfProps({ values, result, data, detailed });
+      const blob = await pdf(<FootprintReportDocument {...pdfProps} />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      const day = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `SmileUp-footprint-estimate-${day}.pdf`;
+      a.rel = "noopener";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.error(e);
+      window.alert("We could not create your PDF. Please try again or use Print from your browser.");
+    } finally {
+      setPdfBusy(false);
+    }
+  }, [values, result, data, detailed]);
+
   return (
     <div className="calc-v2">
       <div className="calc-v2-header">
-        <p className="kicker">Live estimate</p>
+        <p className="kicker">📊 Live estimate</p>
         <h3 className="calc-v2-title">
           {detailed ? "Your footprint" : "Quick footprint"}
         </h3>
         <p className="muted calc-v2-lead">
-          Answer a few questions about travel, home energy, food, and spending. We will turn that into
-          a yearly estimate you can understand—and improve over time.
+          A few questions on travel, home energy, food, and spending—then a yearly total you can read at a glance.
         </p>
       </div>
 
@@ -347,6 +375,21 @@ export default function CalculatorPreview({ detailed = false }) {
                   );
                 })}
               </ul>
+            </div>
+
+            <div className="calc-v2-pdf-wrap">
+              <button
+                type="button"
+                className="btn calc-v2-pdf-btn"
+                onClick={handleDownloadPdf}
+                disabled={pdfBusy}
+                aria-busy={pdfBusy}
+              >
+                {pdfBusy ? "Creating your PDF…" : "Download PDF report"}
+              </button>
+              <p className="muted xsmall calc-v2-pdf-note">
+                📄 A tidy PDF: your totals, breakdown, and a waitlist link.
+              </p>
             </div>
           </div>
         ) : (

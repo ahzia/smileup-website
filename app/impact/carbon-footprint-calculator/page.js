@@ -1,16 +1,20 @@
 import CalculatorJsonLd from "../../../components/CalculatorJsonLd";
 import CalculatorPreview from "../../../components/CalculatorPreview";
 import ContentIconCarousel from "../../../components/ContentIconCarousel";
+import SiteBrand from "../../../components/SiteBrand";
 import ThemeToggle from "../../../components/ThemeToggle";
 import WaitlistCtaSection from "../../../components/WaitlistCtaSection";
+import {
+  calculatorWaitlistCtaDescription,
+  calculatorWaitlistCtaTitle,
+} from "../../../content/calculatorWaitlistCta";
 import { calculatorMethodologySlides } from "../../../content/calculatorMethodologySlides";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
   title: "Carbon Footprint Calculator",
   description:
-    "Estimate your yearly carbon footprint from travel, home electricity, food, and shopping. Free, transparent methodology—see how SmileUp helps you turn insight into lower emissions and real-world missions.",
+    "Free calculator: estimate your yearly carbon footprint from travel, home, food, and shopping. Clear steps and simple methodology from SmileUp.",
   keywords: [
     "carbon footprint calculator",
     "CO2 calculator",
@@ -25,9 +29,24 @@ export const metadata = {
   openGraph: {
     title: "Carbon Footprint Calculator | SmileUp",
     description:
-      "Step-by-step estimate of your yearly emissions—with clear methodology and next steps to reduce your footprint.",
+      "Step-by-step yearly emissions estimate—with clear methodology and tips to lower your footprint.",
     url: "https://smileup.world/impact/carbon-footprint-calculator",
     type: "website",
+    images: [
+      {
+        url: "/hackglobal.webp",
+        width: 1100,
+        height: 700,
+        alt: "SmileUp — climate and social impact tools",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Carbon Footprint Calculator | SmileUp",
+    description:
+      "Step-by-step yearly emissions estimate—with clear methodology and tips to lower your footprint.",
+    images: ["/hackglobal.webp"],
   },
 };
 
@@ -40,15 +59,7 @@ export default function CarbonCalculatorPage() {
       <div className="bg-grid" />
       <header className="site-header">
         <nav className="container nav">
-          <Link href="/" className="brand" aria-label="SmileUp home">
-            <Image
-              src="/logos/smileup-logo-dark.svg"
-              alt="SmileUp"
-              width={128}
-              height={32}
-              priority
-            />
-          </Link>
+          <SiteBrand priority />
           <div className="nav-cluster">
             <div className="nav-links">
               <Link href="/">Home</Link>
@@ -68,20 +79,20 @@ export default function CarbonCalculatorPage() {
 
       <div className="section container split">
         <section>
-          <p className="kicker">SmileUp tool</p>
+          <p className="kicker">🧮 SmileUp tool</p>
           <h1>Carbon footprint calculator</h1>
           <p className="lead">
-            See roughly how much greenhouse gas your year might add up to—from how you move, use electricity at
-            home, eat, and shop. No jargon required: we show the maths in plain language when you are done.
+            See roughly how much your year adds up to—from travel, home electricity, food, and shopping. When
+            you&apos;re done, we explain it in plain language—no jargon.
           </p>
           <ul className="feature-list">
-            <li>Simple questions, one screen at a time</li>
-            <li>Your total split into travel, home, food, and shopping</li>
-            <li>Clear labels for published data versus rough guides</li>
+            <li>One easy question at a time</li>
+            <li>Travel, home, food, and shopping in one total</li>
+            <li>We label what&apos;s from data vs. a rough guide</li>
           </ul>
           <p className="muted small">
-            Results are rounded estimates. They are here to start a conversation with yourself (and soon, with
-            missions in SmileUp)—not to replace a professional carbon audit.
+            Rounded estimates to learn from—not a certified audit. Soon we&apos;ll connect this to missions in
+            SmileUp.
           </p>
         </section>
         <CalculatorPreview detailed />
@@ -91,8 +102,8 @@ export default function CarbonCalculatorPage() {
         <div className="container narrow methodology-section__inner">
           <h2 id="methodology-heading">How we calculate your estimate</h2>
           <p className="muted methodology-section__lead">
-            One simple rule: <strong>emissions ≈ how much you do × a factor</strong>. Tap a topic below—or let the
-            slides play—to see what changes with your answers.
+            Simple idea: <strong>emissions ≈ what you do × a factor</strong>. Tap a topic—or watch the slides—to see
+            what depends on your answers.
           </p>
 
           <ContentIconCarousel
@@ -137,8 +148,8 @@ export default function CarbonCalculatorPage() {
 
       <WaitlistCtaSection
         sectionId="calculator-waitlist"
-        title="Want help lowering your footprint?"
-        description="Join the SmileUp waitlist for missions, habits, and community support that turn climate awareness into steady action—not just a one-off score."
+        title={calculatorWaitlistCtaTitle}
+        description={calculatorWaitlistCtaDescription}
         source="calculator_page"
       />
 

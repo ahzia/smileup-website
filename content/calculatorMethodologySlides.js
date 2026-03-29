@@ -8,7 +8,7 @@ export const calculatorMethodologySlides = [
     emoji: "🚌",
     chipLabel: "Ground travel",
     title: "Travel on the ground",
-    tagline: "Same reference for everyone—so results are easy to compare.",
+    tagline: "Same rules for everyone—easy to compare.",
     bullets: [
       "We turn your weekly car, bus, and train distances into yearly kilometres.",
       "Then multiply by fixed factors: about **0.175 kg CO₂e** per km (medium petrol car), **0.125 kg** per passenger-km (local bus), **0.035 kg** per passenger-km (national rail).",
@@ -20,7 +20,7 @@ export const calculatorMethodologySlides = [
     emoji: "✈️",
     chipLabel: "Flights",
     title: "Flights",
-    tagline: "Typical trip lengths built in, with high-altitude effects—not just CO₂.",
+    tagline: "Typical trip lengths built in, including high-altitude effects.",
     bullets: [
       "Each **short** trip you count ≈ **2,000 passenger-kilometres**; each **long** trip ≈ **12,000**.",
       "We multiply by about **0.126** (short) and **0.117** (long) kg CO₂e per passenger-km.",
@@ -32,10 +32,10 @@ export const calculatorMethodologySlides = [
     emoji: "⚡",
     chipLabel: "Electricity",
     title: "Home electricity",
-    tagline: "This is where your country pick really matters.",
+    tagline: "Where your country choice matters most.",
     bullets: [
       "**Monthly kWh × 12 × grid factor** for the place you select.",
-      "EU countries: **EEA** intensity data; **UK**: national factors; **Global / India** etc.: illustrative averages where we do not host a full official series yet.",
+      "**EU**: EEA data. **UK**: national factors. **Global / India** and similar: rough averages where we don’t publish a full country series yet.",
       "Cleaner grids → lower home emissions with the same usage.",
     ],
   },

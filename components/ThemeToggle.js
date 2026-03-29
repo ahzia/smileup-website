@@ -20,10 +20,13 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     const t = getStoredTheme();
-    setTheme(t);
     document.documentElement.setAttribute("data-theme", t);
+    const id = requestAnimationFrame(() => {
+      setMounted(true);
+      setTheme(t);
+    });
+    return () => cancelAnimationFrame(id);
   }, []);
 
   useEffect(() => {

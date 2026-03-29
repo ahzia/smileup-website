@@ -103,11 +103,23 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: inherit;
 }
 
-.brand img {
-  filter: var(--logo-filter);
-  transition: filter 0.2s ease;
+.brand-wordmark {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.brand-mark {
+  display: block;
+  flex-shrink: 0;
+  border-radius: 10px;
 }
 
 .nav-links {
@@ -902,6 +914,37 @@ select:focus {
 .calc-v2-registry ul {
   margin: 0;
   padding-left: 1rem;
+}
+
+.calc-v2-pdf-wrap {
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--calc-summary-divider);
+}
+
+.calc-v2-pdf-btn {
+  width: 100%;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--calc-summary-text);
+}
+
+.calc-v2-pdf-btn:hover:not(:disabled) {
+  border-color: var(--calc-summary-line-accent);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.calc-v2-pdf-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.calc-v2-pdf-note {
+  margin: 0.5rem 0 0;
+  text-align: center;
+  opacity: 0.78;
 }
 
 .animate-in {

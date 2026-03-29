@@ -6,34 +6,33 @@
 export const howItWorksSlides = [
   {
     id: "feed",
-    title: "Discover missions in a feed you already understand",
+    title: "📱 Discover missions in a feed that feels familiar",
     body:
-      "Swipe through short, story-style clips and cards about climate and social causes—then jump straight into a mission that matches your time and energy.",
+      "Short clips and cards about climate and social causes—then tap into a mission when something inspires you.",
     imageSrc: "/screenshots/01_smileup_screeshot_feed_page.png",
     imageAlt:
       "SmileUp mobile app: mission feed with cards and scrollable impact content",
   },
   {
     id: "missions",
-    title: "Act with clear, real-world missions",
+    title: "✅ Missions you can actually finish",
     body:
-      "Pick challenges you can finish today or this week—commute shifts, waste cuts, learning moments, and more—so awareness turns into repeatable habits.",
+      "Choose simple actions you can do today or this week—like saving energy, reducing waste, or learning something new. Small steps that make a real difference.",
     imageSrc: "/screenshots/02_smileup_missions.png",
     imageAlt: "SmileUp mobile app: missions list with progress and categories",
   },
   {
     id: "leaderboard",
-    title: "See momentum with your community",
+    title: "🏆 See how your friends are doing",
     body:
-      "Friendly competition and shared progress help you stay consistent—because lasting impact is easier when your friends are in it with you.",
+      "A little friendly competition goes a long way. Share progress, cheer each other on, and stay consistent together.",
     imageSrc: "/screenshots/03_smileup_leaderboard.png",
     imageAlt: "SmileUp mobile app: leaderboard showing community rankings",
   },
   {
     id: "rewards",
-    title: "Earn recognition that keeps you coming back",
-    body:
-      "Collect Smiles and unlock rewards as you complete missions—so doing good feels tangible, not abstract.",
+    title: "Earn Smiles for every mission you complete",
+    body: "Use them to unlock rewards and see your impact grow.",
     imageSrc: "/screenshots/04_smileup_rewards.png",
     imageAlt: "SmileUp mobile app: rewards and Smiles balance screen",
   },

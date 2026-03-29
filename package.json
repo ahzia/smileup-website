@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "keywords": [
     "smileup",
@@ -16,6 +16,7 @@
   "author": "SmileUp",
   "license": "ISC",
   "dependencies": {
+    "@react-pdf/renderer": "^4.3.2",
     "@supabase/supabase-js": "^2.100.1",
     "next": "^16.2.1",
     "react": "^19.2.4",
