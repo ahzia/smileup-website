@@ -1,19 +1,89 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { calculatorResultHint, calculatorUserDisclaimer } from "../content/calculatorUserCopy";
 import calculatorFactors from "../lib/calculatorFactors";
 import { computeFootprint, getCountryOptions } from "../lib/footprintCompute.js";
 
 const steps = [
-  { key: "country", label: "Where do you live?", subtitle: "Grid electricity intensity", type: "select" },
-  { key: "carKmPerWeek", label: "Car each week", subtitle: "Medium petrol car (km)", type: "range", min: 0, max: 700, step: 10, suffix: "km" },
-  { key: "busKmPerWeek", label: "Bus each week", subtitle: "Local bus passenger travel", type: "range", min: 0, max: 500, step: 10, suffix: "km" },
-  { key: "railKmPerWeek", label: "Train / metro each week", subtitle: "Rail passenger travel", type: "range", min: 0, max: 500, step: 10, suffix: "km" },
-  { key: "shortFlightsPerYear", label: "Short flights per year", subtitle: "Regional / Europe-style", type: "range", min: 0, max: 30, step: 1, suffix: "trips" },
-  { key: "longFlightsPerYear", label: "Long flights per year", subtitle: "Intercontinental-style", type: "range", min: 0, max: 12, step: 1, suffix: "trips" },
-  { key: "homeKwhPerMonth", label: "Home electricity", subtitle: "Typical monthly use (kWh)", type: "range", min: 100, max: 1500, step: 25, suffix: "kWh / month" },
-  { key: "diet", label: "Diet style", subtitle: "Annual food-system estimate", type: "select" },
-  { key: "consumption", label: "Shopping & stuff", subtitle: "Goods & services tier", type: "select" },
+  {
+    key: "country",
+    label: "Where do you live?",
+    subtitle: "We use this to estimate emissions from the electricity you use at home.",
+    type: "select",
+  },
+  {
+    key: "carKmPerWeek",
+    label: "Driving each week",
+    subtitle: "Roughly how many kilometres you drive in a typical week (medium petrol car).",
+    type: "range",
+    min: 0,
+    max: 700,
+    step: 10,
+    suffix: "km",
+  },
+  {
+    key: "busKmPerWeek",
+    label: "Local bus each week",
+    subtitle: "Regular bus or coach travel close to home.",
+    type: "range",
+    min: 0,
+    max: 500,
+    step: 10,
+    suffix: "km",
+  },
+  {
+    key: "railKmPerWeek",
+    label: "Train or metro each week",
+    subtitle: "National rail, subway, or light rail.",
+    type: "range",
+    min: 0,
+    max: 500,
+    step: 10,
+    suffix: "km",
+  },
+  {
+    key: "shortFlightsPerYear",
+    label: "Shorter flights per year",
+    subtitle: "Regional or European-style trips you count as one return journey each.",
+    type: "range",
+    min: 0,
+    max: 30,
+    step: 1,
+    suffix: "trips",
+  },
+  {
+    key: "longFlightsPerYear",
+    label: "Long flights per year",
+    subtitle: "Intercontinental-style trips you count as one return journey each.",
+    type: "range",
+    min: 0,
+    max: 12,
+    step: 1,
+    suffix: "trips",
+  },
+  {
+    key: "homeKwhPerMonth",
+    label: "Home electricity",
+    subtitle: "Typical monthly electricity on your bill (we multiply by 12 for the year).",
+    type: "range",
+    min: 100,
+    max: 1500,
+    step: 25,
+    suffix: "kWh / month",
+  },
+  {
+    key: "diet",
+    label: "How do you usually eat?",
+    subtitle: "We use a simple yearly band for food-related emissions—not a meal-by-meal diary.",
+    type: "select",
+  },
+  {
+    key: "consumption",
+    label: "Shopping and services",
+    subtitle: "Roughly how much you buy and spend beyond food and energy.",
+    type: "select",
+  },
 ];
 
 const initialValues = {
@@ -72,7 +142,8 @@ export default function CalculatorPreview({ detailed = false }) {
           {detailed ? "Your footprint" : "Quick footprint"}
         </h3>
         <p className="muted calc-v2-lead">
-          Factors load from <code className="calc-code">smileup-calculator-factors.v1.json</code> — official where cited, labelled otherwise.
+          Answer a few questions about travel, home energy, food, and spending. We will turn that into
+          a yearly estimate you can understand—and improve over time.
         </p>
       </div>
 
@@ -125,7 +196,7 @@ export default function CalculatorPreview({ detailed = false }) {
             value={values.country}
             onChange={(e) => updateValue(e.target.value)}
           >
-            <optgroup label="Common">
+            <optgroup label="Popular choices">
               {preferredOrdered.map((o) => (
                 <option key={o.key} value={o.key}>
                   {o.label}
@@ -133,7 +204,7 @@ export default function CalculatorPreview({ detailed = false }) {
               ))}
             </optgroup>
             {rest.length > 0 ? (
-              <optgroup label="All countries (EEA 2023 grid)">
+              <optgroup label="More countries (home electricity)">
                 {rest.map((o) => (
                   <option key={o.key} value={o.key}>
                     {o.label}
@@ -195,7 +266,7 @@ export default function CalculatorPreview({ detailed = false }) {
             Back
           </button>
           <button type="button" className="btn btn-primary" onClick={goNext}>
-            {isLastStep ? "Calculate & show sources" : "Continue"}
+            {isLastStep ? "Show my footprint" : "Continue"}
           </button>
         </div>
       </div>
@@ -232,8 +303,8 @@ export default function CalculatorPreview({ detailed = false }) {
 
         {showBreakdown ? (
           <div className="calc-v2-sources animate-in">
-            <h5 className="calc-v2-sources-title">How we calculated this</h5>
-            <p className="muted xsmall">{data.disclaimer}</p>
+            <h5 className="calc-v2-sources-title">How we got this number</h5>
+            <p className="muted xsmall">{calculatorUserDisclaimer}</p>
             <ul className="calc-v2-line-list">
               {result.lines.map((line) => {
                 const src = sourceById(line.source_id);
@@ -244,10 +315,10 @@ export default function CalculatorPreview({ detailed = false }) {
                       <span className="calc-v2-line-kg">{(line.kg / 1000).toFixed(3)} t</span>
                     </div>
                     <p className="calc-v2-formula">{line.formula}</p>
-                    {line.extra ? <p className="calc-v2-extra">{line.extra}</p> : null}
+                    {line.extra && detailed ? <p className="calc-v2-extra">{line.extra}</p> : null}
                     <div className="calc-v2-source-pill">
                       <span className={`calc-v2-src-type calc-v2-src-type--${src?.type || "assumed"}`}>
-                        {src?.type === "official" ? "Official" : "Assumed / proxy"}
+                        {src?.type === "official" ? "Published data" : "Rough guide"}
                       </span>
                       <span>{src?.name || line.source_id}</span>
                       {src?.url ? (
@@ -262,14 +333,14 @@ export default function CalculatorPreview({ detailed = false }) {
             </ul>
 
             <div className="calc-v2-registry">
-              <h6>Sources used in this run</h6>
+              <h6>References behind this estimate</h6>
               <ul>
                 {result.sourceIds.map((id) => {
                   const s = sourceById(id);
                   return (
                     <li key={id}>
                       <strong>{s?.name || id}</strong>
-                      {s?.type === "assumed" && s?.detail ? (
+                      {detailed && s?.type === "assumed" && s?.detail ? (
                         <span className="muted xsmall"> — {s.detail}</span>
                       ) : null}
                     </li>
@@ -279,9 +350,7 @@ export default function CalculatorPreview({ detailed = false }) {
             </div>
           </div>
         ) : (
-          <p className="muted small calc-v2-hint">
-            Complete the steps and tap <strong>Calculate & show sources</strong> for formulas and citations.
-          </p>
+          <p className="muted small calc-v2-hint">{calculatorResultHint}</p>
         )}
       </div>
     </div>

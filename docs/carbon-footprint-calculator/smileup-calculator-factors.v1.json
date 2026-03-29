@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "last_reviewed": "2026-03-29",
   "calculator_id": "smileup_footprint_v1",
-  "disclaimer": "Educational estimate. Transport uses UK DEFRA 2025 factors as a transparent default for all regions unless you select UK/EU grid data. Food and goods tiers are literature-style assumptions, not national accounts.",
+  "disclaimer": "Educational estimate—not a personal carbon audit. Home electricity uses the grid mix for the country you pick where we have data; travel factors use the same published reference for everyone in this version so results stay easy to compare. Diet and shopping use simple yearly bands as a starting point.",
   "sources_registry": {
     "eea_electricity_2023": {
       "id": "eea_electricity_2023",

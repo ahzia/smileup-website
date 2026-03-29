@@ -123,6 +123,11 @@
   --theme-toggle-bg: rgba(255, 255, 255, 0.7);
   --theme-toggle-border: var(--line);
   --theme-toggle-fg: var(--text);
+
+  --phone-bezel: #1a1c1e;
+  --phone-bezel-highlight: rgba(255, 255, 255, 0.22);
+  --phone-inner-shadow: rgba(0, 0, 0, 0.45);
+  --phone-screen-bg: #000000;
 }
 
 [data-theme="dark"] {
@@ -233,4 +238,9 @@
   --theme-toggle-bg: rgba(19, 26, 23, 0.9);
   --theme-toggle-border: var(--line);
   --theme-toggle-fg: var(--text);
+
+  --phone-bezel: #2a2d30;
+  --phone-bezel-highlight: rgba(255, 255, 255, 0.14);
+  --phone-inner-shadow: rgba(0, 0, 0, 0.55);
+  --phone-screen-bg: #000000;
 }

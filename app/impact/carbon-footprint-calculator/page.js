@@ -1,18 +1,40 @@
+import CalculatorJsonLd from "../../../components/CalculatorJsonLd";
+import CalculatorPreview from "../../../components/CalculatorPreview";
+import ContentIconCarousel from "../../../components/ContentIconCarousel";
+import ThemeToggle from "../../../components/ThemeToggle";
+import WaitlistCtaSection from "../../../components/WaitlistCtaSection";
+import { calculatorMethodologySlides } from "../../../content/calculatorMethodologySlides";
 import Image from "next/image";
 import Link from "next/link";
-import CalculatorPreview from "../../../components/CalculatorPreview";
-import WaitlistForm from "../../../components/WaitlistForm";
-import ThemeToggle from "../../../components/ThemeToggle";
 
 export const metadata = {
   title: "Carbon Footprint Calculator",
   description:
-    "Estimate your annual footprint with SmileUp's lightweight carbon calculator and join the waitlist for mission-based impact tools.",
+    "Estimate your yearly carbon footprint from travel, home electricity, food, and shopping. Free, transparent methodology—see how SmileUp helps you turn insight into lower emissions and real-world missions.",
+  keywords: [
+    "carbon footprint calculator",
+    "CO2 calculator",
+    "climate footprint estimate",
+    "sustainable living",
+    "SmileUp",
+    "carbon emissions estimate",
+  ],
+  alternates: {
+    canonical: "https://smileup.world/impact/carbon-footprint-calculator",
+  },
+  openGraph: {
+    title: "Carbon Footprint Calculator | SmileUp",
+    description:
+      "Step-by-step estimate of your yearly emissions—with clear methodology and next steps to reduce your footprint.",
+    url: "https://smileup.world/impact/carbon-footprint-calculator",
+    type: "website",
+  },
 };
 
 export default function CarbonCalculatorPage() {
   return (
     <main>
+      <CalculatorJsonLd />
       <div className="bg-orb orb-1" />
       <div className="bg-orb orb-2" />
       <div className="bg-grid" />
@@ -46,77 +68,79 @@ export default function CarbonCalculatorPage() {
 
       <div className="section container split">
         <section>
-          <p className="kicker">SmileUp Early Feature</p>
-          <h1>Carbon Footprint Calculator</h1>
+          <p className="kicker">SmileUp tool</p>
+          <h1>Carbon footprint calculator</h1>
           <p className="lead">
-            This is a fast, transparent estimate tool. It is designed as an entry
-            point to behavior change and will connect to future SmileUp missions.
+            See roughly how much greenhouse gas your year might add up to—from how you move, use electricity at
+            home, eat, and shop. No jargon required: we show the maths in plain language when you are done.
           </p>
           <ul className="feature-list">
-            <li>Quick step-by-step inputs</li>
-            <li>Visible assumptions and transparent output</li>
-            <li>Built for mobile-first UX and fast load</li>
+            <li>Simple questions, one screen at a time</li>
+            <li>Your total split into travel, home, food, and shopping</li>
+            <li>Clear labels for published data versus rough guides</li>
           </ul>
           <p className="muted small">
-            Note: results are approximate and based on regional average factors.
+            Results are rounded estimates. They are here to start a conversation with yourself (and soon, with
+            missions in SmileUp)—not to replace a professional carbon audit.
           </p>
         </section>
         <CalculatorPreview detailed />
       </div>
 
-      <section className="section">
-        <div className="container">
-          <h2>How we calculate CO2 emissions</h2>
-          <p className="muted">
-            We use a standard emission-factor model: <strong>emissions = activity x
-            factor</strong>. Factors are selected from public references and tuned for a
-            practical MVP experience.
+      <section className="section methodology-section" aria-labelledby="methodology-heading">
+        <div className="container narrow methodology-section__inner">
+          <h2 id="methodology-heading">How we calculate your estimate</h2>
+          <p className="muted methodology-section__lead">
+            One simple rule: <strong>emissions ≈ how much you do × a factor</strong>. Tap a topic below—or let the
+            slides play—to see what changes with your answers.
           </p>
-          <div className="method-grid">
-            <article className="card">
-              <h3>Transport</h3>
-              <p className="small">Car: annual km x 0.18 kg CO2e/km</p>
-              <p className="small">Bus: annual km x 0.09 kg CO2e/km</p>
-              <p className="small">Rail: annual km x 0.04 kg CO2e/km</p>
-            </article>
-            <article className="card">
-              <h3>Flights</h3>
-              <p className="small">Short haul: flights/year x 250 kg CO2e</p>
-              <p className="small">Long haul: flights/year x 1100 kg CO2e</p>
-              <p className="small">Includes non-CO2 effects in a simplified way.</p>
-            </article>
-            <article className="card">
-              <h3>Home, Food, Consumption</h3>
-              <p className="small">Electricity: monthly kWh x 12 x country factor</p>
-              <p className="small">Food: profile-based yearly estimate</p>
-              <p className="small">Consumption: low/medium/high yearly estimate</p>
-            </article>
-          </div>
-          <p className="muted small">
-            Sources used for calibration:{" "}
-            <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting" target="_blank" rel="noreferrer">
-              DEFRA
-            </a>
-            ,{" "}
-            <a href="https://www.eea.europa.eu/" target="_blank" rel="noreferrer">
-              EEA
-            </a>
-            ,{" "}
-            <a href="https://www.ipcc.ch/" target="_blank" rel="noreferrer">
-              IPCC
-            </a>
-            . Values are simplified for user experience and transparency.
-          </p>
+
+          <ContentIconCarousel
+            className="methodology-carousel"
+            items={calculatorMethodologySlides}
+            ariaLabel="How we calculate each part of your footprint"
+            instanceId="calc-method"
+            intervalMs={8500}
+          />
+
+          <details className="methodology-sources">
+            <summary className="methodology-sources__summary">
+              <span className="methodology-sources__summary-emoji" aria-hidden>
+                📚
+              </span>
+              Where the numbers come from
+            </summary>
+            <div className="methodology-sources__body muted small">
+              <p>
+                Published references include the{" "}
+                <a
+                  href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  UK government conversion factors
+                </a>{" "}
+                (travel) and{" "}
+                <a
+                  href="https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1/greenhouse-gas-emission-intensity-of-electricity-generation-country-level"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  EEA electricity intensity by country
+                </a>
+                . Diet and shopping use simplified bands—we label them clearly in your results as rough guides.
+              </p>
+            </div>
+          </details>
         </div>
       </section>
 
-      <section className="section tint">
-        <div className="container narrow">
-          <h2 className="center">Want mission recommendations from your results?</h2>
-          <p className="center muted">Join the waitlist for the full SmileUp app launch.</p>
-          <WaitlistForm source="calculator_page" />
-        </div>
-      </section>
+      <WaitlistCtaSection
+        sectionId="calculator-waitlist"
+        title="Want help lowering your footprint?"
+        description="Join the SmileUp waitlist for missions, habits, and community support that turn climate awareness into steady action—not just a one-off score."
+        source="calculator_page"
+      />
 
       <footer className="site-footer">
         <div className="container footer-grid">
@@ -132,4 +156,3 @@ export default function CarbonCalculatorPage() {
     </main>
   );
 }
-

@@ -1,5 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
+import SiteJsonLd from "../components/SiteJsonLd";
 
 const themeInit = `
 (function(){
@@ -32,7 +33,10 @@ export const metadata = {
     "SmileUp",
     "social impact app",
     "climate action app",
+    "carbon footprint calculator",
+    "climate missions",
     "gamified missions",
+    "Gen Z volunteering",
     "waitlist",
   ],
   openGraph: {
@@ -43,6 +47,14 @@ export const metadata = {
     siteName: "SmileUp",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/hackglobal.webp",
+        width: 1100,
+        height: 700,
+        alt: "SmileUp team collaborating at a hackathon",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -59,6 +71,7 @@ export default function RootLayout({ children }) {
         <Script id="smileup-theme-init" strategy="beforeInteractive">
           {themeInit}
         </Script>
+        <SiteJsonLd />
         {children}
       </body>
     </html>

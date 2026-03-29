@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import WaitlistForm from "../components/WaitlistForm";
+import AutoMediaCarousel from "../components/AutoMediaCarousel";
 import CalculatorPreview from "../components/CalculatorPreview";
 import ThemeToggle from "../components/ThemeToggle";
+import WaitlistCtaSection from "../components/WaitlistCtaSection";
+import { howItWorksSlides } from "../content/howItWorksSlides";
 
 export default function HomePage() {
   return (
@@ -57,9 +59,9 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="metric-row">
-              <div className="metric-pill">Mission-first product</div>
-              <div className="metric-pill">Transparent impact math</div>
-              <div className="metric-pill">Community gamification-ready</div>
+              <div className="metric-pill">Real missions, not endless scrolling</div>
+              <div className="metric-pill">See the impact behind your actions</div>
+              <div className="metric-pill">Friends and leaderboards that keep you going</div>
             </div>
           </div>
           <div className="hero-media fade-up delay-1">
@@ -79,40 +81,35 @@ export default function HomePage() {
       <section id="how" className="section">
         <div className="container">
           <h2 className="center">How SmileUp works</h2>
-          <div className="cards three">
-            <article className="card fade-up">
-              <h3>Discover</h3>
-              <p>Explore short, engaging impact stories and mission opportunities.</p>
-            </article>
-            <article className="card fade-up delay-1">
-              <h3>Act</h3>
-              <p>Complete practical missions in climate and social impact categories.</p>
-            </article>
-            <article className="card fade-up delay-2">
-              <h3>Grow</h3>
-              <p>Earn Smiles, see your progress, and unlock community momentum.</p>
-            </article>
-          </div>
+          <p className="center muted narrow how-intro">
+            We meet young people where they already spend attention—quick, visual, mobile—and point that energy toward
+            climate and social missions you can actually finish. Here is a glimpse of the app experience.
+          </p>
+          <AutoMediaCarousel
+            className="how-carousel"
+            items={howItWorksSlides}
+            ariaLabel="Screens from the SmileUp app: feed, missions, leaderboard, rewards"
+            intervalMs={7500}
+          />
         </div>
       </section>
 
       <section id="early-features" className="section tint">
         <div className="container split">
           <div className="fade-up">
-            <p className="kicker">Early feature launch</p>
-            <h2>Carbon Footprint Calculator</h2>
+            <p className="kicker">Try it on the web</p>
+            <h2>Carbon footprint calculator</h2>
             <p>
-              Before the full platform launch, we are shipping useful tools on the
-              website. Start with a fast calculator that estimates annual emissions
-              and points to mission categories.
+              Curious what a year of habits might mean for the climate? Our calculator turns a few everyday choices
+              into a friendly annual estimate—so you have a baseline before you start improving it with missions.
             </p>
             <ul className="feature-list">
-              <li>Fast one-question-per-step interactions</li>
-              <li>Transparent estimates and assumptions</li>
-              <li>Designed to connect with future in-app missions</li>
+              <li>Plain-language questions—no spreadsheets</li>
+              <li>See travel, home, food, and shopping in one picture</li>
+              <li>Built to line up with the climate missions we are bringing to the app</li>
             </ul>
             <Link href="/impact/carbon-footprint-calculator" className="btn btn-primary">
-              Open full calculator page
+              Open the full calculator
             </Link>
           </div>
           <div className="fade-up delay-1">
@@ -147,16 +144,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="waitlist" className="section tint">
-        <div className="container narrow">
-          <h2 className="center">Join the SmileUp waitlist</h2>
-          <p className="center muted">
-            Be the first to access the app release, mission pilots, and feature
-            updates.
-          </p>
-          <WaitlistForm source="home_waitlist" />
-        </div>
-      </section>
+      <WaitlistCtaSection
+        title="Ready to turn care for the planet into daily action?"
+        description="Join the waitlist for early access to missions, community challenges, and tools that help you shrink your footprint and support causes you believe in—not just watch another feed."
+        source="home_waitlist"
+      />
 
       <footer className="site-footer">
         <div className="container footer-grid">
