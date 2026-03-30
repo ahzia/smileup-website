@@ -45,17 +45,36 @@ export async function POST(request) {
       .upsert(payload, { onConflict: "email" });
 
     if (error) {
+      console.error("[waitlist] supabase", error.message, error.code, error.details);
+      const dev = process.env.NODE_ENV === "development";
       return Response.json(
-        { ok: false, error: "Failed to save your signup. Please retry." },
+        {
+          ok: false,
+          error: dev
+            ? error.message || "Supabase request failed."
+            : "Failed to save your signup. Please retry.",
+        },
         { status: 500 }
       );
     }
 
     return Response.json({ ok: true }, { status: 200 });
   } catch (error) {
+    console.error("[waitlist]", error);
+    const dev = process.env.NODE_ENV === "development";
+    const missingCreds =
+      typeof error?.message === "string" &&
+      error.message.includes("Missing Supabase");
     return Response.json(
-      { ok: false, error: "Unexpected error while submitting form." },
-      { status: 500 }
+      {
+        ok: false,
+        error: dev
+          ? error.message
+          : missingCreds
+            ? "Signup is temporarily unavailable."
+            : "Unexpected error while submitting form.",
+      },
+      { status: missingCreds ? 503 : 500 }
     );
   }
 }

@@ -7,8 +7,18 @@ This file documents the current waitlist integration in `smileup-website`.
 Create `.env.local` in `smileup-website/`:
 
 ```bash
-SUPABASE_URL=your-project-url
+# Option A — API URL (from Supabase Dashboard → Settings → API):
+SUPABASE_URL=https://YOUR_PROJECT_REF.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+
+# Option B — same Postgres URL as smileup-impactchain (DATABASE_URL / pooler).
+# The site resolves https://YOUR_REF.supabase.co from postgres.PROJECT_REF@… or db.PROJECT_REF.supabase.co.
+SUPABASE_URL=postgresql://postgres.YOUR_PROJECT_REF:…@…pooler.supabase.com:6543/postgres?…
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+
+# Option C — reuse the variable name from impactchain only:
+# DATABASE_URL=postgresql://…   (same string as in smileup-impactchain/.env)
+# SUPABASE_SERVICE_ROLE_KEY=…
 ```
 
 Use service role key only on the server.  
