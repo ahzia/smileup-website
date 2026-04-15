@@ -23,6 +23,7 @@ const themeInit = `
 
 export const metadata = {
   metadataBase: new URL("https://smileup.world"),
+  manifest: "/manifest.webmanifest",
   title: {
     default: "SmileUp | Turn everyday actions into impact",
     template: "%s | SmileUp",
@@ -35,6 +36,11 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: [{ url: "/logos/smileup-logo-dark.svg", type: "image/svg+xml" }],
+    shortcut: ["/logos/smileup-logo-dark.svg"],
+    apple: [{ url: "/logos/smileup-logo-mono-green.svg", type: "image/svg+xml" }],
   },
   keywords: [
     "SmileUp",

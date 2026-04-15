@@ -1,0 +1,431 @@
+{
+  "site": {
+    "brandName": "SmileUp",
+    "domain": "smileup.world"
+  },
+  "navigation": {
+    "homePage": [
+      "How it works",
+      "Early features",
+      "Waitlist",
+      "Instagram"
+    ],
+    "calculatorPage": [
+      "Home",
+      "Waitlist",
+      "Instagram"
+    ],
+    "themeToggle": [
+      "Switch to dark mode",
+      "Switch to light mode"
+    ],
+    "brandAriaLabel": "SmileUp home"
+  },
+  "homePage": {
+    "hero": {
+      "kicker": "🌍 Impact, made social",
+      "title": "Turn everyday actions into real-world impact.",
+      "lead": "Short missions for climate and community—on your phone, with rewards and friends. Join the waitlist to get in early.",
+      "actions": [
+        "Join the waitlist",
+        "Try the carbon calculator 🌱"
+      ],
+      "metrics": [
+        "🎯 Missions, not endless scrolling",
+        "📊 See what your actions add up to",
+        "👥 Friends and leaderboards"
+      ],
+      "mediaAlt": "SmileUp team at global hackathon"
+    },
+    "howSection": {
+      "title": "How SmileUp works ✨",
+      "intro": "We turn the time you already spend on your phone into real-world impact. Discover quick, engaging missions you can actually complete.",
+      "carouselAriaLabel": "Screens from the SmileUp app: feed, missions, leaderboard, rewards"
+    },
+    "earlyFeaturesSection": {
+      "kicker": "🌱 Try it on the web",
+      "title": "Carbon footprint calculator",
+      "body": "Ever wondered what your daily habits add up to, over a year? Answer a few simple questions and get a clear yearly estimate—then use it as a starting point when you join our climate missions.",
+      "bullets": [
+        "Plain questions—no spreadsheets",
+        "Travel, home, food, and shopping in one view",
+        "Same spirit as the missions we're building in the app"
+      ],
+      "cta": "Open the full calculator"
+    },
+    "builtWithPeopleSection": {
+      "title": "Built with real people 🛠️",
+      "body": "We shaped SmileUp at hackathons and pilots with students, community groups, and partners who told us what actually works.",
+      "subtext": "Now we're polishing for launch: a fast app, clear impact, and an easier path for organizations who want to join.",
+      "mediaAlt": "SmileUp team at Warsaw hackathon"
+    },
+    "waitlistCta": {
+      "title": "Ready to take small actions for the planet every day?",
+      "description": "Get early access to missions, challenges, and tools that help you lower your footprint and back causes you care about. Less scrolling, more doing."
+    },
+    "footer": [
+      "Instagram"
+    ]
+  },
+  "calculatorPage": {
+    "hero": {
+      "kicker": "🧮 SmileUp tool",
+      "title": "Carbon footprint calculator",
+      "lead": "See roughly how much impact your lifestyle creates each year—from travel, home electricity, food, and shopping. When you're done, we explain it in plain language.",
+      "bullets": [
+        "One easy question at a time",
+        "Travel, home, food, and shopping in one total",
+        "We label what's from data vs. a rough guide"
+      ],
+      "smallPrint": "Rounded estimates to learn from—not a certified audit. Soon we'll connect this to missions in SmileUp."
+    },
+    "methodologySection": {
+      "title": "How we calculate your estimate",
+      "lead": "Simple idea: emissions ≈ what you do × a factor. Tap a topic—or watch the slides—to see what depends on your answers.",
+      "carouselAriaLabel": "How we calculate each part of your footprint",
+      "sourcesSummary": "Where the numbers come from",
+      "sourcesBody": "Published references include the UK government conversion factors (travel) and EEA electricity intensity by country (electricity). Diet and shopping use simplified bands—we label them clearly in your results as rough guides.",
+      "sourceLinks": [
+        "UK government conversion factors",
+        "EEA electricity intensity by country"
+      ]
+    },
+    "waitlistCta": {
+      "title": "Want help lowering your footprint?",
+      "description": "Join the waitlist for missions, habits, and friends who help you keep going—so climate awareness turns into real, consistent action."
+    },
+    "footer": [
+      "Home",
+      "Instagram"
+    ]
+  },
+  "waitlistForm": {
+    "fields": [
+      "Name (optional)",
+      "Email",
+      "Country (optional)",
+      "I am joining as"
+    ],
+    "placeholders": [
+      "Your name",
+      "you@example.com",
+      "Germany"
+    ],
+    "roleOptions": [
+      "Future app user",
+      "Organization / NGO"
+    ],
+    "button": {
+      "idle": "Join the waitlist ✨",
+      "loading": "Joining…"
+    },
+    "consentNote": "We'll only email you about SmileUp launches and updates.",
+    "messages": {
+      "success": "You're on the list—we'll email you when there's news.",
+      "errorFallback": "Something went wrong. Please try again.",
+      "submitErrorFallback": "Could not submit form"
+    }
+  },
+  "howItWorksCarousel": [
+    {
+      "id": "feed",
+      "title": "📱 Discover missions in a feed that feels familiar",
+      "body": "Short clips and cards about climate and social causes—then tap into a mission when something inspires you.",
+      "imageAlt": "SmileUp mobile app: mission feed with cards and scrollable impact content"
+    },
+    {
+      "id": "missions",
+      "title": "✅ Missions you can actually finish",
+      "body": "Choose simple actions you can do today or this week—like saving energy, reducing waste, or learning something new. Small steps that make a real difference.",
+      "imageAlt": "SmileUp mobile app: missions list with progress and categories"
+    },
+    {
+      "id": "leaderboard",
+      "title": "🏆 See how your friends are doing",
+      "body": "Friendly competition keeps you motivated. Share progress, cheer each other on, and stay consistent together.",
+      "imageAlt": "SmileUp mobile app: leaderboard showing community rankings"
+    },
+    {
+      "id": "rewards",
+      "title": "Earn Smiles for every mission you complete",
+      "body": "Use them to unlock rewards and track your impact over time.",
+      "imageAlt": "SmileUp mobile app: rewards and Smiles balance screen"
+    }
+  ],
+  "methodologyCarousel": [
+    {
+      "id": "travel-ground",
+      "emoji": "🚌",
+      "chipLabel": "Ground travel",
+      "title": "Travel on the ground",
+      "tagline": "Same rules for everyone—easy to compare.",
+      "bullets": [
+        "We turn your weekly car, bus, and train distances into yearly kilometres.",
+        "Then multiply by fixed factors: about 0.175 kg CO2e per km (medium petrol car), 0.125 kg per passenger-km (local bus), 0.035 kg per passenger-km (national rail).",
+        "Your country choice does not change these in this version—only home electricity uses your location."
+      ]
+    },
+    {
+      "id": "flights",
+      "emoji": "✈️",
+      "chipLabel": "Flights",
+      "title": "Flights",
+      "tagline": "Typical trip lengths built in, including high-altitude effects.",
+      "bullets": [
+        "Each short trip you count is about 2,000 passenger-kilometres; each long trip is about 12,000.",
+        "We multiply by about 0.126 (short) and 0.117 (long) kg CO2e per passenger-km.",
+        "Those rates include an extra allowance for radiative forcing from flying at altitude."
+      ]
+    },
+    {
+      "id": "electricity",
+      "emoji": "⚡",
+      "chipLabel": "Electricity",
+      "title": "Home electricity",
+      "tagline": "Where your country choice matters most.",
+      "bullets": [
+        "Monthly kWh times 12 times grid factor for the place you select.",
+        "EU: EEA data. UK: national factors. Global / India and similar: rough averages where we don't publish a full country series yet.",
+        "Cleaner grids mean lower home emissions with the same usage."
+      ]
+    },
+    {
+      "id": "food",
+      "emoji": "🥗",
+      "chipLabel": "Food",
+      "title": "Food",
+      "tagline": "A simple yearly band—not a meal-by-meal diary.",
+      "bullets": [
+        "You pick a diet style; we map it to a fixed yearly total.",
+        "Roughly 1.5 to 3.0 tonnes CO2e per year from vegan through meat-heavy—broad lifestyle bands.",
+        "Good for direction; not a substitute for a detailed food audit."
+      ]
+    },
+    {
+      "id": "shopping",
+      "emoji": "🛍️",
+      "chipLabel": "Shopping",
+      "title": "Shopping & services",
+      "tagline": "Beyond food and energy—one simple spending level.",
+      "bullets": [
+        "Low, medium, or high maps to fixed yearly totals (about 0.4 to 1.7 tonnes CO2e per year).",
+        "A proxy for goods and services until a future version can use spending or basket data.",
+        "We label this clearly in your breakdown as a rough guide."
+      ]
+    }
+  ],
+  "calculatorTool": {
+    "header": {
+      "kicker": "📊 Live estimate",
+      "titleQuick": "Quick footprint",
+      "titleDetailed": "Your footprint",
+      "lead": "A few questions on travel, home energy, food, and spending—then a yearly total you can read at a glance."
+    },
+    "stepsAriaLabel": "Calculator steps",
+    "steps": [
+      {
+        "key": "country",
+        "label": "Where do you live?",
+        "subtitle": "We use this to estimate emissions from the electricity you use at home."
+      },
+      {
+        "key": "carKmPerWeek",
+        "label": "Driving each week",
+        "subtitle": "Roughly how many kilometres you drive in a typical week (medium petrol car)."
+      },
+      {
+        "key": "busKmPerWeek",
+        "label": "Local bus each week",
+        "subtitle": "Regular bus or coach travel close to home."
+      },
+      {
+        "key": "railKmPerWeek",
+        "label": "Train or metro each week",
+        "subtitle": "National rail, subway, or light rail."
+      },
+      {
+        "key": "shortFlightsPerYear",
+        "label": "Shorter flights per year",
+        "subtitle": "Count each regional or European return trip as one."
+      },
+      {
+        "key": "longFlightsPerYear",
+        "label": "Long flights per year",
+        "subtitle": "Count each long-haul return trip as one."
+      },
+      {
+        "key": "homeKwhPerMonth",
+        "label": "Home electricity",
+        "subtitle": "Typical monthly electricity on your bill (we multiply by 12 for the year)."
+      },
+      {
+        "key": "diet",
+        "label": "How do you usually eat?",
+        "subtitle": "Simple yearly band—not a food diary."
+      },
+      {
+        "key": "consumption",
+        "label": "Shopping and services",
+        "subtitle": "Roughly how much you buy and spend beyond food and energy."
+      }
+    ],
+    "controls": {
+      "buttons": [
+        "Back",
+        "Continue",
+        "Show my footprint"
+      ],
+      "countryGroups": [
+        "Popular choices",
+        "More countries (home electricity)"
+      ],
+      "dietOptions": [
+        "Vegan",
+        "Vegetarian",
+        "Mixed",
+        "Meat-heavy"
+      ],
+      "consumptionOptions": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "results": {
+      "annualTotalLabel": "Estimated annual total",
+      "totalUnit": "tonnes CO2e",
+      "miniBarLabels": [
+        "Transport",
+        "Home",
+        "Food",
+        "Stuff"
+      ],
+      "breakdownTitle": "How we got this number",
+      "sourceTypeLabels": [
+        "Published data",
+        "Rough guide"
+      ],
+      "referencesTitle": "References behind this estimate",
+      "pdfButtonIdle": "Download PDF report",
+      "pdfButtonBusy": "Creating your PDF…",
+      "pdfNote": "📄 A tidy PDF: your totals, breakdown, and a waitlist link.",
+      "resultHint": "Tap 'Show my footprint' to see your total and a simple breakdown.",
+      "disclaimer": "This is an educational estimate—not a certified carbon audit. Your country mainly changes home electricity; travel uses the same reference for everyone so numbers stay easy to compare. Food and shopping use simple yearly bands.",
+      "pdfErrorAlert": "We could not create your PDF. Please try again or use Print from your browser."
+    }
+  },
+  "carouselUi": {
+    "autoMediaCarousel": {
+      "defaultAriaLabel": "Featured slides",
+      "dotsAriaLabel": "Choose slide",
+      "hintReducedMotion": "Use the dots to switch slides.",
+      "hintAutoAdvance": "Slides advance on their own. Hover or focus here to pause."
+    },
+    "contentIconCarousel": {
+      "defaultAriaLabel": "Information slides",
+      "chipsAriaLabel": "Jump to topic",
+      "prevAriaLabel": "Previous slide",
+      "nextAriaLabel": "Next slide",
+      "dotAriaLabelTemplate": "Show slide {n}: {title}",
+      "hintReducedMotion": "Use the topic chips or arrows to move between slides.",
+      "hintAutoAdvance": "Slides advance automatically. Hover here to pause."
+    }
+  },
+  "pdfReport": {
+    "documentMeta": {
+      "title": "SmileUp footprint estimate",
+      "author": "SmileUp",
+      "subject": "Carbon footprint estimate",
+      "keywords": "carbon footprint, CO2, SmileUp"
+    },
+    "header": [
+      "SmileUp",
+      "smileup.world",
+      "Your carbon footprint estimate",
+      "Generated {date} · Educational estimate, not a certified audit"
+    ],
+    "sections": [
+      "Your inputs",
+      "Estimated annual total",
+      "How we got this number",
+      "How we got this number (continued)",
+      "References behind this estimate"
+    ],
+    "unitsAndLabels": [
+      "tonnes CO2e (carbon dioxide equivalent)",
+      "Published data",
+      "Rough guide",
+      "Open source",
+      "Page {pageNumber} of {totalPages}"
+    ],
+    "inputLabels": [
+      "Where you live",
+      "Driving (per week)",
+      "Local bus (per week)",
+      "Train / metro (per week)",
+      "Shorter flights (per year)",
+      "Long flights (per year)",
+      "Home electricity (per month)",
+      "How you usually eat",
+      "Shopping & services"
+    ],
+    "waitlistCta": {
+      "title": "Want help lowering your footprint?",
+      "description": "Join the waitlist for missions, habits, and friends who help you keep going—so climate awareness turns into real, consistent action.",
+      "button": "Join the waitlist",
+      "footerNote": "smileup.world · https://smileup.world"
+    }
+  },
+  "seoMetadata": {
+    "siteLayout": {
+      "titleDefault": "SmileUp | Turn everyday actions into impact",
+      "description": "SmileUp turns everyday actions into real climate and social impact—missions, community, and rewards on your phone.",
+      "keywords": [
+        "SmileUp",
+        "social impact app",
+        "climate action app",
+        "carbon footprint calculator",
+        "climate missions",
+        "gamified missions",
+        "Gen Z volunteering",
+        "waitlist"
+      ],
+      "openGraphDescription": "Real climate and social impact—missions, community, and rewards on your phone."
+    },
+    "calculatorPage": {
+      "title": "Carbon Footprint Calculator",
+      "description": "Free calculator: estimate your yearly carbon footprint from travel, home, food, and shopping. Clear steps and simple methodology from SmileUp.",
+      "keywords": [
+        "carbon footprint calculator",
+        "CO2 calculator",
+        "climate footprint estimate",
+        "sustainable living",
+        "SmileUp",
+        "carbon emissions estimate"
+      ],
+      "openGraphTitle": "Carbon Footprint Calculator | SmileUp",
+      "openGraphDescription": "Step-by-step yearly emissions estimate—with clear methodology and tips to lower your footprint.",
+      "openGraphImageAlt": "SmileUp — climate and social impact tools"
+    }
+  },
+  "structuredData": {
+    "siteJsonLd": {
+      "organizationDescription": "SmileUp turns everyday actions into real climate and social impact through missions, community, and rewards.",
+      "websiteDescription": "Missions, community, and rewards for climate and social impact on your phone. Join the waitlist for early access."
+    },
+    "calculatorJsonLd": {
+      "webApplicationName": "SmileUp Carbon Footprint Calculator",
+      "webApplicationDescription": "Free, step-by-step estimate of your yearly carbon footprint from travel, home electricity, diet, and spending—with transparent methodology.",
+      "faq": [
+        {
+          "question": "Is this calculator a certified carbon audit?",
+          "answer": "No. It is an educational estimate to help you see where emissions often come from and how choices add up. It is not a certified carbon footprint for compliance or offset purchases."
+        },
+        {
+          "question": "Does the country I pick change my whole result?",
+          "answer": "It mainly changes home electricity, because grid power mixes differ by country. Travel factors in this version use the same reference values for everyone so results stay comparable."
+        }
+      ]
+    }
+  }
+}

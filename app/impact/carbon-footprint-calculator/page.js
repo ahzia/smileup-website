@@ -82,8 +82,8 @@ export default function CarbonCalculatorPage() {
           <p className="kicker">🧮 SmileUp tool</p>
           <h1>Carbon footprint calculator</h1>
           <p className="lead">
-            See roughly how much your year adds up to—from travel, home electricity, food, and shopping. When
-            you&apos;re done, we explain it in plain language—no jargon.
+            See roughly how much impact your lifestyle creates each year—from travel, home electricity, food, and
+            shopping. When you&apos;re done, we explain it in plain language.
           </p>
           <ul className="feature-list">
             <li>One easy question at a time</li>
@@ -102,8 +102,8 @@ export default function CarbonCalculatorPage() {
         <div className="container narrow methodology-section__inner">
           <h2 id="methodology-heading">How we calculate your estimate</h2>
           <p className="muted methodology-section__lead">
-            Simple idea: <strong>emissions ≈ what you do × a factor</strong>. Tap a topic—or watch the slides—to see
-            what depends on your answers.
+            Simple idea: <strong>your emissions = what you do × an emission factor</strong>. Tap a topic—or watch the
+            slides—to see what depends on your answers.
           </p>
 
           <ContentIconCarousel

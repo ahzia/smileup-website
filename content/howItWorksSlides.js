@@ -8,7 +8,7 @@ export const howItWorksSlides = [
     id: "feed",
     title: "📱 Discover missions in a feed that feels familiar",
     body:
-      "Short clips and cards about climate and social causes—then tap into a mission when something inspires you.",
+      "Short videos and posts about climate and social causes. Tap a mission when something inspires you.",
     imageSrc: "/screenshots/01_smileup_screeshot_feed_page.png",
     imageAlt:
       "SmileUp mobile app: mission feed with cards and scrollable impact content",
@@ -25,14 +25,14 @@ export const howItWorksSlides = [
     id: "leaderboard",
     title: "🏆 See how your friends are doing",
     body:
-      "A little friendly competition goes a long way. Share progress, cheer each other on, and stay consistent together.",
+      "Friendly competition keeps you motivated. Share progress, cheer each other on, and stay consistent together.",
     imageSrc: "/screenshots/03_smileup_leaderboard.png",
     imageAlt: "SmileUp mobile app: leaderboard showing community rankings",
   },
   {
     id: "rewards",
     title: "Earn Smiles for every mission you complete",
-    body: "Use them to unlock rewards and see your impact grow.",
+    body: "Use them to unlock rewards and track your impact over time.",
     imageSrc: "/screenshots/04_smileup_rewards.png",
     imageAlt: "SmileUp mobile app: rewards and Smiles balance screen",
   },

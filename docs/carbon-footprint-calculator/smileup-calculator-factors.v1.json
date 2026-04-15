@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "last_reviewed": "2026-03-29",
   "calculator_id": "smileup_footprint_v1",
-  "disclaimer": "Educational estimate—not a personal carbon audit. Your country mainly changes home electricity; travel uses the same reference for everyone so numbers stay easy to compare. Food and shopping use simple yearly bands.",
+  "disclaimer": "This is an educational estimate—not a certified carbon audit. Your country mainly changes home electricity; travel uses the same reference for everyone so numbers stay easy to compare. Food and shopping use simple yearly bands.",
   "sources_registry": {
     "eea_electricity_2023": {
       "id": "eea_electricity_2023",

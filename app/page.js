@@ -40,8 +40,8 @@ export default function HomePage() {
             <p className="kicker">🌍 Impact, made social</p>
             <h1>Turn everyday actions into real-world impact.</h1>
             <p className="lead">
-              Short missions for climate and community—on your phone, with rewards and friends. Join the waitlist to
-              get in early.
+              Short missions for climate and community, right on your phone. Earn rewards and take action with friends.
+              Join the waitlist to get in early.
             </p>
             <div className="hero-actions">
               <a href="#waitlist" className="btn btn-primary">
@@ -75,8 +75,8 @@ export default function HomePage() {
         <div className="container">
           <h2 className="center">How SmileUp works ✨</h2>
           <p className="center muted narrow how-intro">
-            We meet young people where they already are—on their phones—and turn that attention into real-world impact.
-            Discover quick, engaging missions you can actually complete.
+            We turn the time you already spend on your phone into real-world impact. Discover quick, engaging missions
+            you can actually complete.
           </p>
           <AutoMediaCarousel
             className="how-carousel"
@@ -93,8 +93,8 @@ export default function HomePage() {
             <p className="kicker">🌱 Try it on the web</p>
             <h2>Carbon footprint calculator</h2>
             <p>
-              Wonder what a year of habits means for the planet? Answer a few simple questions and get a friendly
-              yearly estimate—then use it as a starting point when you join our climate missions.
+              Ever wondered what your daily habits add up to, over a year? Answer a few simple questions and get a
+              clear yearly estimate—then use it as a starting point when you join our climate missions.
             </p>
             <ul className="feature-list">
               <li>Plain questions—no spreadsheets</li>
@@ -126,19 +126,17 @@ export default function HomePage() {
           <div className="fade-up delay-1">
             <h2>Built with real people 🛠️</h2>
             <p>
-              We shaped SmileUp at hackathons and pilots with students, community groups, and partners who told us what
-              actually works.
+              We built SmileUp through hackathons and real-world testing with students, communities, and partners.
             </p>
             <p className="muted">
-              Now we&apos;re polishing for launch: a fast app, clear impact, and an easier path for organizations who
-              want to join.
+              Now we&apos;re preparing for launch: making the app faster, clearer, and easier for organizations to use.
             </p>
           </div>
         </div>
       </section>
 
       <WaitlistCtaSection
-        title="Ready to act for the planet—little and often?"
+        title="Ready to take small actions for the planet every day?"
         description="Get early access to missions, challenges, and tools that help you lower your footprint and back causes you care about. Less scrolling, more doing."
         source="home_waitlist"
       />

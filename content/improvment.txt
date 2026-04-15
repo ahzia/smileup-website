@@ -1,0 +1,195 @@
+1. Hero Lead (Homepage)
+
+Original:
+
+Short missions for climate and community—on your phone, with rewards and friends.
+
+Issue: Slightly vague + not super natural flow
+
+Better:
+
+Short missions for climate and community, right on your phone. Earn rewards and take action with friends.
+
+2. How Section Intro
+
+Original:
+
+We meet young people where they already are—on their phones—and turn that attention into real-world impact.
+
+Issue: “meet young people where they already are” = overused / vague
+
+Better:
+
+We turn the time you already spend on your phone into real-world impact.
+
+3. Early Features Body (Calculator)
+
+Original:
+
+Wonder what a year of habits means for the planet?
+
+Issue: Slightly unnatural phrasing
+
+Better:
+
+Ever wondered what your daily habits add up to, over a year?
+
+Original:
+
+Answer a few simple questions and get a friendly yearly estimate
+
+Issue: “friendly estimate” unclear
+
+Better:
+
+Answer a few simple questions and get a clear yearly estimate
+
+4. Built With People Section
+
+Original:
+
+We shaped SmileUp at hackathons and pilots with students, community groups, and partners who told us what actually works.
+
+Issue: Too long + slightly heavy
+
+Better:
+
+We built SmileUp through hackathons and real-world testing with students, communities, and partners.
+
+Original:
+
+Now we're polishing for launch: a fast app, clear impact, and an easier path for organizations who want to join.
+
+Issue: Slightly abstract
+
+Better:
+
+Now we’re preparing for launch: making the app faster, clearer, and easier for organizations to use.
+
+5. Waitlist CTA
+
+Original:
+
+Ready to act for the planet—little and often?
+
+Issue: Sounds slightly unnatural
+
+Better:
+
+Ready to take small actions for the planet every day?
+
+
+6. Calculator Hero Lead
+
+Original:
+
+See roughly how much your year adds up to
+
+Issue: Slightly unclear phrasing
+
+Better:
+
+See roughly how much impact your lifestyle creates each year
+
+Original:
+
+we explain it in plain language—no jargon.
+
+✅ Good, but can be tighter
+
+Better:
+
+explained in sample language
+
+7. Methodology Section Lead
+
+Original:
+
+Simple idea: emissions ≈ what you do × a factor.
+
+Issue: Not super beginner-friendly
+
+Better:
+
+Simple idea: your emissions = what you do × an emission factor.
+
+8. Waitlist CTA (Calculator Page)
+
+Original:
+
+so caring about climate turns into steady action, not a one-off score.
+
+Issue: Slightly long
+
+Better:
+
+so climate awareness turns into real, consistent action.
+
+9. Carousel – Feed
+
+Original:
+
+Short clips and cards about climate and social causes—then tap into a mission when something inspires you.
+
+Issue: Slightly long
+
+Better:
+
+Short videos and posts about climate and social causes. Tap a mission when something inspires you.
+
+10. Carousel – Leaderboard
+
+Original:
+
+A little friendly competition goes a long way.
+
+Issue: Generic phrase
+
+Better:
+
+Friendly competition keeps you motivated.
+
+11. Rewards Section
+
+Original:
+
+Use them to unlock rewards and see your impact grow.
+
+Issue: Slightly vague
+
+Better:
+
+Use them to unlock rewards and track your impact over time.
+
+12. Calculator Results Hint
+
+Original:
+
+When you're ready, tap Show my footprint for your total and a short breakdown.
+
+Issue: Slightly clunky
+
+Better:
+
+Tap “Show my footprint” to see your total and a simple breakdown.
+
+13. Disclaimer (Important One)
+
+Original:
+
+Educational estimate—not a personal carbon audit.
+
+Issue: Slightly abrupt
+
+Better:
+
+This is an educational estimate—not a certified carbon audit.
+
+💡 Small Global Improvements
+
+You can apply these everywhere:
+
+Replace:
+“friendly estimate” → clear estimate
+“what your year adds up to” → your yearly impact
+“meet users where they are” → turn your time into action
